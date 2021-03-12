@@ -1,6 +1,7 @@
 from Classes import ApartmentList
 from Classes import Apartment
 from Classes import AptQuery
+from Classes import AptQueries
 from FindBoligScraper import ReturnApartmentListFromBeautifulSoup
 from bs4 import BeautifulSoup
 from EMailManager import FindBoligNotification
@@ -10,10 +11,10 @@ from FindBoligScraper import ReturnApartmentListFromApartmentQuery
 
 def AssertApartmentListAppend():
     extApartmentList = ApartmentList()
-    extApartmentList.AppendApartmentNoConflict(Apartment(title="Test", extId="7493"))
-    extApartmentList.AppendApartmentNoConflict(Apartment(title="Test", extId="5183"))
-    extApartmentList.AppendApartmentNoConflict(Apartment(title="Test", extId="8293"))
-    extApartmentList.AppendApartmentNoConflict(Apartment(title="Test", extId="5183"))
+    extApartmentList.PersistApartmentNoConflict(Apartment(title="Test", extId="7493"))
+    extApartmentList.PersistApartmentNoConflict(Apartment(title="Test", extId="5183"))
+    extApartmentList.PersistApartmentNoConflict(Apartment(title="Test", extId="8293"))
+    extApartmentList.PersistApartmentNoConflict(Apartment(title="Test", extId="5183"))
     if len(extApartmentList.apartmentList) != 3:
         print("AssertApartmentList Assertion                    FAILED")
     else:
@@ -48,10 +49,24 @@ def AssertSendEmailWithApartment():
     else:
         print("AssertSendMailWIthApartment Assertion            FAILED")
 
+def AssertPersistAndLoadAptQueries():
+    aptQuery1 = AptQuery("Test 1", 17000, "Margretheholmsvej", 100)
+    aptQuery1.PersistAptQueryNoConflict()
+
+    aptQueries = AptQueries()
+    aptQueries.LoadPersisted()
+    aptQueries.PrintApartmentQueries()
+
 
     
 def AssertStoreAptQuery():
     print()
+
+def PrintPersistedApartmentList():
+    aptList = ApartmentList()
+    aptList.LoadPersistedApartments()
+    for apartment in aptList.GetList():
+        print(repr(apartment))
 
 
 def SendEmailOnApartmentAvailable():
@@ -62,4 +77,12 @@ def SendEmailOnApartmentAvailable():
 #AssertApartmentListAppend()
 #AssertAptQueryURL()
 #AssertScrapeFromBeautifulSoup()
-AssertSendEmailWithApartment()
+#AssertSendEmailWithApartment()
+#AssertPersistAndLoadAptQueries()
+
+#AptQuery.EmptyAptQueryTable()
+
+
+#AssertPersistAndLoadAptQueries()
+
+PrintPersistedApartmentList()

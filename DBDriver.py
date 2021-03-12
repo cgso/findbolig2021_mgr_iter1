@@ -5,6 +5,20 @@ from Classes import ApartmentList
 from FindBoligScraper import ReturnApartmentListFromApartmentQuery
 from Classes import AptQuery
 
+
+
+
+
+
+
+
+#
+# SQLLITE ONLY IMPLEMENTATION 
+#
+#
+
+
+
 def SQLliteGeneralAssertion():
     conn = sqlite3.connect('test.db')
     c = conn.cursor()
@@ -39,7 +53,7 @@ def SQLLiteDropFindBoligSchema():
     conn.close()
 
 def SQLLiteInsertAptQuery(aptQueryObj):
-    aptQuery = aptQueryOb.__dict__
+    aptQuery = aptQueryObj.__dict__
     conn = sqlite3.connect('findbolig.db')
     c = conn.cursor()
     #The below safely insert dict values. Mind that the ToDict keys must match the column names in DB
@@ -87,8 +101,3 @@ def SQLLiteInsertApartmentListNoConflict(apartmentList):
 
 #TODO
 #Implement SQLAlchemy as ORM (Object-Relational Mapper) for 
-
-#SQLLiteDropFindBoligSchema()
-#SQLLiteCreateFindBoligSchema()
-#apartmentList = ReturnApartmentListFromApartmentQuery(AptQuery("test",20000,"Margretheholmsvej", 40))
-#SQLLiteInsertApartmentListNoConflict(apartmentList)

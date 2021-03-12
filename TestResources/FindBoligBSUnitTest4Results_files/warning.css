@@ -1,0 +1,54 @@
+.adBlockerWarning {
+    background-color: #700000;
+    color: #FFF;
+    height: 120px;
+    left: 0;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 200;
+}
+
+.adBlockerWarning > div {
+    color: #FFF;
+    margin: 0 auto 0 auto;
+    overflow: hidden;
+    width: 976px;
+}
+
+.adBlockerWarning > div * {
+    color: #FFF;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.adBlockerWarning > div h2 {
+    font-size: 16px;
+    margin: 14px 0 5px 0;
+    padding: 0;
+}
+
+.adBlockerWarning > div p {
+    font-size: 12px;
+    margin: 0 0 5px 0;
+    padding: 0;
+}
+
+.adBlockerWarning > div a {
+    color: #FFF;
+    text-decoration: underline;
+}
+
+.adBlockerWarning > div button {
+    margin-top: 10px;
+    display: block;
+    background-color: #700000;
+    border: 1px solid #FFF;
+    cursor: pointer;
+    padding: 5px 10px 5px 10px;
+}
+
+.adBlockerWarning > div button:hover { border: 1px solid #700000; }
+
+.adBlockerWarningText { display: none; }

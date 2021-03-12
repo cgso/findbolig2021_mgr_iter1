@@ -1,0 +1,1616 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" class=" afkiyjgacr"><head>
+    <title>Find bolig | Listevisning | Findbolig.nu</title>
+       <!-- Google Tag Manager -->
+      <script>
+      window.addEventListener('CookieInformationConsentGiven', function (event) {
+      if (CookieInformation.getConsentGivenFor('cookie_cat_statistic')) {
+      (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-TBTVZ42');}}, false);
+      </script>
+      <link href="FindBoligBSUnitTest4Results_files/DE-style.css" rel="stylesheet"><link href="FindBoligBSUnitTest4Results_files/jquery.css" rel="stylesheet"><link href="FindBoligBSUnitTest4Results_files/jquery_002.css" rel="stylesheet"><link href="FindBoligBSUnitTest4Results_files/dropMenu.css" rel="stylesheet"><link href="FindBoligBSUnitTest4Results_files/cookieWarning.css" rel="stylesheet"><link href="FindBoligBSUnitTest4Results_files/warning.css" rel="stylesheet"><script id="CookieConsent" src="FindBoligBSUnitTest4Results_files/uc.js" data-culture="DA" type="text/javascript"></script><meta http-equiv="X-UA-Compatible" content="IE=9"><meta name="keywords" content="lejebolig, bolig, udlejning"><meta name="description" content="Findbolig.nu er en boligportal, hvor du gratis kan finde ledige lejligheder og ungdomsboliger i hele landet samt blive skrevet på venteliste."><meta name="google-site-verification" content="gchvKNf5zcOXWRE6y2YBqOlmsi9StXNzuYqpMZeBZ8k"><meta property="og:type" content="website"><meta property="og:site_name" content="findbolig.nu"><meta property="og:title" content="Find bolig | Listevisning | Findbolig.nu"><meta http-equiv="content-Type" content="text/html; charset=UTF-8"><meta name="CODE_LANGUAGE" content="C#"><meta name="vs_defaultClientScript" content="JavaScript"><meta name="vs_targetSchema" content="http://schemas.microsoft.com/intellisense/ie5"><link href="FindBoligBSUnitTest4Results_files/DE-style-gron.css" rel="stylesheet"><script type="text/javascript">
+           
+            var ActiveColor = "gron";
+            var setSubmitRun = true;
+            var setColHeightRun = true;
+            var currentLang = "da";
+          </script><script type="text/javascript" src="FindBoligBSUnitTest4Results_files/jquery.js"></script><script type="text/javascript" src="FindBoligBSUnitTest4Results_files/jquery-ui.js"></script><script type="text/javascript" src="FindBoligBSUnitTest4Results_files/jquery_003.js"></script><script type="text/javascript" src="FindBoligBSUnitTest4Results_files/jquery_006.js"></script><script type="text/javascript" src="FindBoligBSUnitTest4Results_files/jquery_002.js"></script><script type="text/javascript" src="FindBoligBSUnitTest4Results_files/dialog.js"></script><script type="text/javascript" src="FindBoligBSUnitTest4Results_files/DE-layout.js"></script><script type="text/javascript" src="FindBoligBSUnitTest4Results_files/ClientValidationTranslations.aspx"></script><script type="text/javascript" src="FindBoligBSUnitTest4Results_files/validateForm.js"></script><script type="text/javascript" src="FindBoligBSUnitTest4Results_files/DE-datePicker.js"></script><script type="text/javascript" src="FindBoligBSUnitTest4Results_files/jquery_007.js"></script><script type="text/javascript" src="FindBoligBSUnitTest4Results_files/WaitMap.js"></script><script type="text/javascript" src="FindBoligBSUnitTest4Results_files/jquery_005.js"></script><script type="text/javascript" src="FindBoligBSUnitTest4Results_files/jquery_004.js"></script><script type="text/javascript" src="FindBoligBSUnitTest4Results_files/jquery_008.js"></script><script type="text/javascript" src="FindBoligBSUnitTest4Results_files/dropMenu.js"></script><script type="text/javascript" src="FindBoligBSUnitTest4Results_files/ui.js"></script><script src="FindBoligBSUnitTest4Results_files/ads.js" type="text/javascript"></script>
+    <meta id="scID" content="" name="scID">
+    <meta id="scPath" content="" name="scPath">
+    <meta http-equiv="Content-Language" content="" name="Language">
+</head>
+  <body>
+  <form method="post" action="/ledigeboliger/liste.aspx?&amp;adr=Margretheholmsvej&amp;rentmax=15000&amp;m2min=50&amp;showrented=1&amp;showyouth=0&amp;showlimitedperiod=1&amp;showunlimitedperiod=1&amp;showOpenDay=0" id="mainform">
+<div class="aspNetHidden">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="">
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUIMzY2ODYwNTkPFgIeE1ZhbGlkYXRlUmVxdWVzdE1vZGUCARYCAgMQZGQWBAIBD2QWBAIDDw8WBB4EVGV4dAUHTG9nIGluZB4LTmF2aWdhdGVVcmwFDC9sb2dpbmQuYXNweGRkAggPDxYEHwIFpAEvbGVkaWdlYm9saWdlci9saXN0ZS5hc3B4Pz0mYWRyPU1hcmdyZXRoZWhvbG1zdmVqJnJlbnRtYXg9MTUwMDAmbTJtaW49NTAmc2hvd3JlbnRlZD0xJnNob3d5b3V0aD0wJnNob3dsaW1pdGVkcGVyaW9kPTEmc2hvd3VubGltaXRlZHBlcmlvZD0xJnNob3dPcGVuRGF5PTAmc2NfbGFuZz1lbh8BBQdFbmdsaXNoZGQCAw9kFgQCAQ9kFgJmD2QWAmYPZBYSAg4PZBYCZg8QDxYMHg1EYXRhVGV4dEZpZWxkBQRUZXh0Hg5EYXRhVmFsdWVGaWVsZAUFVmFsdWUeC18hRGF0YUJvdW5kZx4MQXV0b1Bvc3RCYWNraB4IQ3NzQ2xhc3MFG2lucHV0NTAgZW50ZXJFdmVudCBtaW52YWx1ZR4EXyFTQgICZBAVIQAES2xkLgNTdC4CMS4CMi4CMy4CNC4CNS4CNi4CNy4COC4COS4DMTAuAzExLgMxMi4DMTMuAzE0LgMxNS4DMTYuAzE3LgMxOC4DMTkuAzIwLgMyMS4DMjIuAzIzLgMyNC4DMjUuAzI2LgMyNy4DMjguAzI5LgMzMC4VIQItMgItMQEwATEBMgEzATQBNQE2ATcBOAE5AjEwAjExAjEyAjEzAjE0AjE1AjE2AjE3AjE4AjE5AjIwAjIxAjIyAjIzAjI0AjI1AjI2AjI3AjI4AjI5AjMwFCsDIWdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2RkAg8PZBYCZg8QDxYMHwMFBFRleHQfBAUFVmFsdWUfBWcfBmgfBwUbaW5wdXQ1MCBlbnRlckV2ZW50IG1heHZhbHVlHwgCAmQQFSEABEtsZC4DU3QuAjEuAjIuAjMuAjQuAjUuAjYuAjcuAjguAjkuAzEwLgMxMS4DMTIuAzEzLgMxNC4DMTUuAzE2LgMxNy4DMTguAzE5LgMyMC4DMjEuAzIyLgMyMy4DMjQuAzI1LgMyNi4DMjcuAzI4LgMyOS4DMzAuFSECLTICLTEBMAExATIBMwE0ATUBNgE3ATgBOQIxMAIxMQIxMgIxMwIxNAIxNQIxNgIxNwIxOAIxOQIyMAIyMQIyMgIyMwIyNAIyNQIyNgIyNwIyOAIyOQIzMBQrAyFnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dkZAISDxAPFgIeB0NoZWNrZWRnZGRkZAITDxAPFgIfCWhkZGRkAhUPZBYCZg8QDxYGHwMFBFRleHQfBAUFVmFsdWUfBWdkEBUBBUFsdGFuFQECMTQUKwMBZ2RkAhYPZBYCZg8QDxYGHwMFBFRleHQfBAUFVmFsdWUfBWdkEBUJCEVsZXZhdG9yCUfDpXJkaGF2ZQ5IdXNkeXIgZm9yYnVkdA5IdXNkeXIgdGlsbGFkdAhJbnRlcm5ldAlMZWdlcGxhZHMJUGFya2VyaW5nC1NlbmlvcmJvbGlnB1Zhc2tlcmkVCQExATQCMTIBNgIzNAE5AjEwAjQ2AjEzFCsDCWdnZ2dnZ2dnZ2RkAhcPFgIeB1Zpc2libGVnZAIYDxYCHwpnZAIZDxYCHwpnFgICBQ8QDxYGHwQFD0xhbmRpbmdQYWdlUGF0aB8DBQROYW1lHwVnZBAVDBNWw6ZsZyBwZW5zaW9uc2thc3NlCkFQIFBlbnNpb24RTMOmcmVybmVzIFBlbnNpb24CUCsaUEJVLCBQw6ZkYWdvZ2VybmVzIFBlbnNpb24GUGVuc2FtDlBlbnNpb25EYW5tYXJrH1BlbnNpb25za2Fzc2VuIGZvciBGYXJtYWtvbm9tZXIKUEZBIChERUFTKQNQS0EKU2FtcGVuc2lvbhFUREMgUGVuc2lvbnNrYXNzZRUMABIvYXAlMjBwZW5zaW9uLmFzcHgPL2xwcGVuc2lvbi5hc3B4Cy9wcGx1cy5hc3B4CS9wYnUuYXNweAwvcGVuc2FtLmFzcHgUL1BlbnNpb25EYW5tYXJrLmFzcHgSL0Zhcm1ha29ub21lci5hc3B4Nmh0dHBzOi8vd3d3LmZpbmRib2xpZy5udS9kYS1ESy9MYW5kaW5nUGFnZXMvUEZBcGVuc2lvbgkvUEtBLmFzcHgQL3NhbXBlbnNpb24uYXNweCMvTGFuZGluZ1BhZ2VzL3RkY3BlbnNpb25za2Fzc2UuYXNweBQrAwxnZ2dnZ2dnZ2dnZ2dkZAIDD2QWAmYPZBYCZg9kFgICAQ9kFgRmD2QWBmYPZBYEAgEPDxYCHwEFDDQgUmVzdWx0YXRlcmRkAgUPFgIeBGhyZWYFrAEvbGVkaWdlYm9saWdlci9saXN0ZS5hc3B4PyZhZHI9TWFyZ3JldGhlaG9sbXN2ZWomcmVudG1heD0xNTAwMCZtMm1pbj01MCZzaG93cmVudGVkPTEmc2hvd3lvdXRoPTAmc2hvd2xpbWl0ZWRwZXJpb2Q9MSZzaG93dW5saW1pdGVkcGVyaW9kPTEmc2hvd09wZW5EYXk9MCZwYWdlPTEmcGFnZXNpemU9MTAwFgJmDw8WAh8BBRtWaXMgMTAwIHJlc3VsdGF0ZXIgcHIuIHNpZGVkZAICDxYCHgtfIUl0ZW1Db3VudAIHZAIEDxYCHwwCBGQCAg8PFgIfCmhkZBgBBR5fX0NvbnRyb2xzUmVxdWlyZVBvc3RCYWNrS2V5X18WEQU2Y3RsMDAkcGxhY2Vob2xkZXJzaWRlYmFyXzAkY2hrX3Jlc2lkZW5jZVR5cGVfTGVqZWJvbGlnBUJjdGwwMCRwbGFjZWhvbGRlcnNpZGViYXJfMCRjaGtfcmVzaWRlbmNlVHlwZV9MZWplYm9saWdVbmdkb21zYm9saWcFTGN0bDAwJHBsYWNlaG9sZGVyc2lkZWJhcl8wJGNoa0xpc3RfRmFjaWxpdGllc1Jlc2lkZW5jZSRjaGtsc3RfQ2hlY2tCb3hMaXN0JDAFTGN0bDAwJHBsYWNlaG9sZGVyc2lkZWJhcl8wJGNoa0xpc3RfRmFjaWxpdGllc1Jlc2lkZW5jZSRjaGtsc3RfQ2hlY2tCb3hMaXN0JDAFS2N0bDAwJHBsYWNlaG9sZGVyc2lkZWJhcl8wJGNoa0xpc3RfRmFjaWxpdGllc0J1aWxkaW5nJGNoa2xzdF9DaGVja0JveExpc3QkMAVLY3RsMDAkcGxhY2Vob2xkZXJzaWRlYmFyXzAkY2hrTGlzdF9GYWNpbGl0aWVzQnVpbGRpbmckY2hrbHN0X0NoZWNrQm94TGlzdCQxBUtjdGwwMCRwbGFjZWhvbGRlcnNpZGViYXJfMCRjaGtMaXN0X0ZhY2lsaXRpZXNCdWlsZGluZyRjaGtsc3RfQ2hlY2tCb3hMaXN0JDIFS2N0bDAwJHBsYWNlaG9sZGVyc2lkZWJhcl8wJGNoa0xpc3RfRmFjaWxpdGllc0J1aWxkaW5nJGNoa2xzdF9DaGVja0JveExpc3QkMwVLY3RsMDAkcGxhY2Vob2xkZXJzaWRlYmFyXzAkY2hrTGlzdF9GYWNpbGl0aWVzQnVpbGRpbmckY2hrbHN0X0NoZWNrQm94TGlzdCQ0BUtjdGwwMCRwbGFjZWhvbGRlcnNpZGViYXJfMCRjaGtMaXN0X0ZhY2lsaXRpZXNCdWlsZGluZyRjaGtsc3RfQ2hlY2tCb3hMaXN0JDUFS2N0bDAwJHBsYWNlaG9sZGVyc2lkZWJhcl8wJGNoa0xpc3RfRmFjaWxpdGllc0J1aWxkaW5nJGNoa2xzdF9DaGVja0JveExpc3QkNgVLY3RsMDAkcGxhY2Vob2xkZXJzaWRlYmFyXzAkY2hrTGlzdF9GYWNpbGl0aWVzQnVpbGRpbmckY2hrbHN0X0NoZWNrQm94TGlzdCQ3BUtjdGwwMCRwbGFjZWhvbGRlcnNpZGViYXJfMCRjaGtMaXN0X0ZhY2lsaXRpZXNCdWlsZGluZyRjaGtsc3RfQ2hlY2tCb3hMaXN0JDgFS2N0bDAwJHBsYWNlaG9sZGVyc2lkZWJhcl8wJGNoa0xpc3RfRmFjaWxpdGllc0J1aWxkaW5nJGNoa2xzdF9DaGVja0JveExpc3QkOAUuY3RsMDAkcGxhY2Vob2xkZXJzaWRlYmFyXzAkY2hrX1VuTGltaXRlZFBlcmlvZAUqY3RsMDAkcGxhY2Vob2xkZXJzaWRlYmFyXzAkY2hrX1RpbWVMaW1pdGVkBS5jdGwwMCRwbGFjZWhvbGRlcnNpZGViYXJfMCRjaGtfU2hvd09ubHlPcGVuRGF5iviaBi/GubSm5ni6WzmOFbwV8htTyBpa4y22L/N1pRU=">
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['mainform'];
+if (!theForm) {
+    theForm = document.mainform;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="4BD4DB67">
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAGrmbUx2s62YtTCxFqoMdzrpO96s77IEw/uTNebIhi5YxCwxjk7F5U+k2xBx2aDgVOfYRST98mNzAHANhXHlBnSLXzW4rxnlfCR8t/5ZbR9DUKlgZmPUnAGBLLk0gb0ZfljJbeNr85n7rOEpJTeZLvz393NKkLkf9Aer4ARGff4+F5ur4oVzqG79tGpTLWXNfc0o2g8NPTEDDrUcQkj0sMnEgQGuehPQ3KJSeIzxelSr3qkLNyoNEGK59PILBFjJx3EWSyEI3inK6VYVTP1yixZDGYcszvBvVeLfckGmMPIPZjcPTLLvR464Hdc8Ehn8CT3nqe9jHIPTFt4G0qFFZktkHUs5quuAIpZVx4PCY/0iDTtsElm/FrW6XzDMyYnoVwdWWs6sr3xjQYaKmB5fOIF8NeKzjeJv+Ic4gBQ/EFoKcLyh6KEByVYcLjZDlq35JRxqnhzqepxnb6X2qTJRMS6jbVf2CwoehF0U+0OgqDD4mreyjdWpB/BRpk+oP8F6O2OXkui8TiqPK7tTAIKT4B1PUISPDVhiCxd/x0F6PSIN2KWga+euQqFtsFS8BBYoW3OHHywjbJ/PIXxTBwJQsHJQLPAmAD+dli/WQv1KDIHHAaW5wd+KCvyCxvWPv2s92G0rS3y4hKItbQX0mOaGle14/ukvcdKA6qmBZXS1jiApKMiwJJTblqQ5ffLqtufaRxUgT6ysWRH2y2XRNSCbWh28+Vfd3sYGecu3aogr/WBjeeEWtCkfruL91CwfwrtBe9omi3Ccm5C9ksyn/GPc97jKVhhAYQYN4Lup523klzognlhQONYRPZg1hvt3saDUms0DVaY5mqJ59hgynDRMaRYi4XdbhcWDqunjOlvPBXSYryPBeJJ5qHoLTikfJKprn37/l8KcgwtfhSPHDts/RB25jJPf+5ySDtY6zBZIO9kwgz21/nVvV+1hiGxXl/9QE24yd4lFe1xrp6uFH+ogpNz+TLeiOJHmX5rSx25V112nuio6yl8l3ISzEZo4NU0bAGvq+9hT1vacvLszVI/qBhm6cOs3MfNAlmIInyK4gABvs2BDmAXKkqlhENEYlBbz4SkmkMPvUEqIeqw7pPBx9khRgfjVGsA1RhO953JCVXVZRuMyx81LDTnB/06pqKcPFvz0tsLzYFLsusIe1z6BdUEiX/ng5zr/gwM+6qpmUVQcFp28B01i9Dxy44E+NqF197IeXnyjk9h8sZmFlYILLowk2WrAg0Zx1AJEMEZjlQCA13HiEVUhHZz08tgkma9goie6fr65gY4itP8U9V6+d+7i4aMnKsckyNff9gEbvkuYXzItGQmIBw+8iPqb8TVwndAH29i8Z5W30eZVIvbGupnRhfeiAEH6YWg+dD9C3JcvnDkSuffk5Z8uDNrgY++cEb9moRX3YQInNpqjB9eNATukUHFrR3OaZJn1WvcJb8DWyFsxwQSwZGdIZHe08HVymU+yR42DZvSQFKt2py+jPHBi/xZpquIEyuc6qQFoJNaIRLkcQYOcGZe1EbzKVmBsIFoWuKL1hrOZ1xGlSYRMKfJU55E78vZEOQeYEfKQRZ2hhmcD9KbMgmzrOXKFnOQ8hH+MwHDQiw6R9m+uhp2sE3Yv40kk11xPoO8WGx1N4RWXKYIot95M/8W0I8y9oCXmMAidVY2pwYxFSHsRcJvA+apDtlF3d03oO1cy4hdl/x6ZVYhiONsVFJn6J0Lh+BPoOB12qoNruZuZ2aL7NzftOuVao0CpXk4sacu84jik3Hp6e3lse1uHLFREhTl8Ok07VoHIBCTyOpfkW/J3ZwTU8Dsr9+HMBqFCRsEPMbaRBZvLkrZZoNRx9p3tV7egbkFw4dAmyL1rHYc5FHCjrUW7azXFqxfpC711M+1WjUP3mO027bkIHn0jSSMIui50tAuFONCBsvx6P1oR215DxzUt/Pii4JfbJNWvvrcneGpUrue2BpW1jGeYPBtXUAcpP06CObMG/83MnqkS3pMTTLhsISJfHdMIupAuox4/wqn2eUGiguZSSQdnNjFWzYOEWBX/ghrT+ptZfXhngjqsF2XLHoUGIYVpHFWJJNY/q7zS7VlMOOztpAMxipH0aF1E675trS88cEDD4kGyUmScT7Qg1ZVb6JjXNMN968hN/qyiWMP1J4vvLMSAUB4obRMzavZ+1ut5PQldE2rHGvNeJpqVY6yatNwVkF+/TlhgDFUTmD/Z6VK7Csz7Cs5Lwur+fFvXf4fgM3DHHiF9wv00+LdJd8xxSUFe3ClOWuvwwwVFuvnBqfa1ATNEjCLANI7kymridu8=">
+</div>
+    
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TBTVZ42"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        if (self != top) {
+            $(document.body).css("display", "none");
+            top.location.href = "/";
+        }
+    });            
+</script>
+
+<div class="adBlockerWarningText">
+    <h2>Vigtigt: Begrænset funktionalitet med adblocker</h2>
+Du har en adblocker installeret, hvilket betyder, at indhold og funktioner på Findbolig.nu ikke virker korrekt.
+Vi anbefaler derfor, at du slår din adblocker fra, før du fortsætter med at bruge Findbolig.nu.
+  
+</div>
+
+<div class="hovedfaneblade">
+    <div id="topBar">
+        <p class="logo">
+            <a href="https://findbolig.nu/" title="findbolig.nu">&nbsp; </a>
+        </p>
+        <p class="userName">
+            <b><span id="fm1_lbl_userName"></span></b><span id="fm1_lbl_CompanyName"></span>
+            <a id="fm1_link_Login" class="bulletLink" href="https://findbolig.nu/logind.aspx">Log ind</a>
+        </p>
+        <div class="tabs">                       
+            <p class="udlej">
+                <a id="fm1_link_publiher" href="https://findbolig.nu/udlejbolig-nu.aspx">Udlejbolig.nu</a>                
+            </p>
+            
+                        
+        </div>
+    </div>
+    <div id="topmenu">
+        <div><p class="menuActive"><a href="https://findbolig.nu/Findbolig-nu/Find-bolig">Find bolig</a></p><div class="dropMenu" style="top: 79.4px; left: 290.6px;"><ul><li><a href="https://findbolig.nu/Findbolig-nu/Find-bolig/Ledige-boliger">Ledige boliger</a></li><li><a href="https://findbolig.nu/Findbolig-nu/Find-bolig/Ventelisteboliger">Ventelisteboliger</a></li><li><a href="https://findbolig.nu/Findbolig-nu/Find-bolig/Ungdomsboliger">Ungdomsboliger</a></li></ul></div></div><div><p class="menu"><a href="https://findbolig.nu/Findbolig-nu/At-bo-til-leje" style="background-image: url(&quot;/gfx/topmenu-bg-gron.gif&quot;);">At bo til leje</a></p></div><div><p class="menu"><a href="https://findbolig.nu/Findbolig-nu/Udlejere" style="background-image: url(&quot;/gfx/topmenu-bg-gron.gif&quot;);">Udlejere</a></p></div>
+            <p style="display: none;">
+                
+            </p>
+            <p>
+                <a href="https://findbolig.nu/login/help.aspx">Hjælp</a></p>
+            <p>
+                <a href="https://findbolig.nu/omfindbolig.aspx">Om Findbolig.nu</a></p>
+            <br style="clear: both;">
+    </div>
+</div>
+
+    
+<div class="indholdsomraade">
+        <div class="sidekolonne" id="colLeft" style="background-color: rgb(255, 255, 255);">
+            
+            
+<script type="text/javascript" src="FindBoligBSUnitTest4Results_files/QuerySearchSimple.js"> </script> 
+<style>
+.ui-autocomplete { position: absolute; cursor: default;height:250px; }	
+
+.maxMininputs select
+{
+    width: 51px;
+}
+
+.maxMininputs input
+{
+    width: 48px;
+    padding-left: 1px; padding-right: 0px;
+    margin-left: 0px; margin-right: 0px;
+}
+</style>
+<div id="subTabs">
+    <ul>
+    
+        <li class="subTabCurrent">
+            <a href="https://findbolig.nu/ledigeboliger.aspx">Ledige</a>
+        </li>
+        <li>
+            <a href="https://findbolig.nu/ventelisteboliger.aspx">Venteliste</a>
+        </li>
+    
+    </ul>
+</div>
+
+
+
+<div id="searchCriteriaContainer" class="formSection darkBg padRightLarge">    
+         
+    <p>
+        Hvor:<a id="lnk_InfoWhere" href="#" class="bulletLinkInfo">&nbsp;</a>                
+        <br> 
+        <input name="ctl00$placeholdersidebar_0$txt_where" type="text" maxlength="200" id="ctl00_placeholdersidebar_0_txt_where" class="input188 enterEvent searchagentValidator whereTxt ac_input" value="By, postnr" onfocus="clearField(this, whereDefaultText ,true);" style="color: rgb(150, 150, 150);" autocomplete="off">                
+    </p>
+    
+    
+    <p>
+        Ejendomsnavn eller adresse:<br>        
+        <input name="ctl00$placeholdersidebar_0$txt_Address" type="text" value="Margretheholmsvej" maxlength="200" id="ctl00_placeholdersidebar_0_txt_Address" class="input188 geoinput enterEvent searchagentValidator ac_input" autocomplete="off">    
+    </p>
+    
+    <br>    
+    
+    
+    <p class="searchFirstColumnWidth" style="padding-top:6px;"> 
+        Husleje:        
+    </p>
+    <p class="floatRight maxMininputs" style="padding-top:6px;">
+        <input name="ctl00$placeholdersidebar_0$txt_RentMin" type="text" maxlength="9" id="ctl00_placeholdersidebar_0_txt_RentMin" class="input50 enterEvent minvalue" value="Min" style="color: rgb(150,150,150)"><span class="minMaxSpace">-</span><input name="ctl00$placeholdersidebar_0$txt_RentMax" type="text" value="15000" maxlength="9" id="ctl00_placeholdersidebar_0_txt_RentMax" class="input50 enterEvent maxvalue" style="color: rgb(150,150,150)">
+    </p>
+    <div class="floatNone"></div>
+    
+    <p class="searchFirstColumnWidth"> 
+        Værelser:
+    </p>
+    <p class="floatRight maxMininputs">
+        <input name="ctl00$placeholdersidebar_0$txt_RoomsMin" type="text" maxlength="9" id="ctl00_placeholdersidebar_0_txt_RoomsMin" class="input50 enterEvent minvalue" value="Min" style="color: rgb(150,150,150)"><span class="minMaxSpace">-</span><input name="ctl00$placeholdersidebar_0$txt_RoomsMax" type="text" maxlength="9" id="ctl00_placeholdersidebar_0_txt_RoomsMax" class="input50 enterEvent maxvalue" value="Max" style="color: rgb(150,150,150)">
+    </p>
+    <div class="floatNone"></div>
+    
+    <p class="searchFirstColumnWidth"> 
+        Boligareal:
+    </p>
+    <p class="floatRight maxMininputs">
+        <input name="ctl00$placeholdersidebar_0$txt_M2Min" type="text" value="50" maxlength="9" id="ctl00_placeholdersidebar_0_txt_M2Min" class="input50 enterEvent minvalue" style="color: rgb(150,150,150)"><span class="minMaxSpace">-</span><input name="ctl00$placeholdersidebar_0$txt_M2Max" type="text" maxlength="9" id="ctl00_placeholdersidebar_0_txt_M2Max" class="input50 enterEvent maxvalue" value="Max" style="color: rgb(150,150,150)">
+    </p>
+    <div class="floatNone"></div>
+    
+    <p class="searchFirstColumnWidth"> 
+        Etage:
+    </p>
+    
+    <p class="floatRight maxMininputs">
+        <select name="ctl00$placeholdersidebar_0$ddlFloorMin$ddl_DropDown" id="ctl00_placeholdersidebar_0_ddlFloorMin_ddl_DropDown" class="input50 enterEvent minvalue">
+	<option value="-2" selected="selected"></option>
+	<option value="-1">Kld.</option>
+	<option value="0">St.</option>
+	<option value="1">1.</option>
+	<option value="2">2.</option>
+	<option value="3">3.</option>
+	<option value="4">4.</option>
+	<option value="5">5.</option>
+	<option value="6">6.</option>
+	<option value="7">7.</option>
+	<option value="8">8.</option>
+	<option value="9">9.</option>
+	<option value="10">10.</option>
+	<option value="11">11.</option>
+	<option value="12">12.</option>
+	<option value="13">13.</option>
+	<option value="14">14.</option>
+	<option value="15">15.</option>
+	<option value="16">16.</option>
+	<option value="17">17.</option>
+	<option value="18">18.</option>
+	<option value="19">19.</option>
+	<option value="20">20.</option>
+	<option value="21">21.</option>
+	<option value="22">22.</option>
+	<option value="23">23.</option>
+	<option value="24">24.</option>
+	<option value="25">25.</option>
+	<option value="26">26.</option>
+	<option value="27">27.</option>
+	<option value="28">28.</option>
+	<option value="29">29.</option>
+	<option value="30">30.</option>
+
+</select><span class="minMaxSpace">-</span><select name="ctl00$placeholdersidebar_0$ddlFloorMax$ddl_DropDown" id="ctl00_placeholdersidebar_0_ddlFloorMax_ddl_DropDown" class="input50 enterEvent maxvalue">
+	<option value="-2" selected="selected"></option>
+	<option value="-1">Kld.</option>
+	<option value="0">St.</option>
+	<option value="1">1.</option>
+	<option value="2">2.</option>
+	<option value="3">3.</option>
+	<option value="4">4.</option>
+	<option value="5">5.</option>
+	<option value="6">6.</option>
+	<option value="7">7.</option>
+	<option value="8">8.</option>
+	<option value="9">9.</option>
+	<option value="10">10.</option>
+	<option value="11">11.</option>
+	<option value="12">12.</option>
+	<option value="13">13.</option>
+	<option value="14">14.</option>
+	<option value="15">15.</option>
+	<option value="16">16.</option>
+	<option value="17">17.</option>
+	<option value="18">18.</option>
+	<option value="19">19.</option>
+	<option value="20">20.</option>
+	<option value="21">21.</option>
+	<option value="22">22.</option>
+	<option value="23">23.</option>
+	<option value="24">24.</option>
+	<option value="25">25.</option>
+	<option value="26">26.</option>
+	<option value="27">27.</option>
+	<option value="28">28.</option>
+	<option value="29">29.</option>
+	<option value="30">30.</option>
+
+</select>
+    </p>
+    <div class="floatNone"></div>                       
+
+     
+        
+
+</div>
+
+
+<div id="residenceTypeDiv" class="formSection darkBg padRightLarge">
+    <p id="ctl00_placeholdersidebar_0_selectionArea_ResidenceType" class="mainArea cursorHand"><img src="FindBoligBSUnitTest4Results_files/section-expanded.gif" alt="" title="" class="searchareaArrow"><b>Boligtype</b></p>  
+    <br>  
+    <div class="selectionArea" id="a1" style="display: block;">
+        <table>
+        <tbody><tr>
+            <td><input id="ctl00_placeholdersidebar_0_chk_residenceType_Lejebolig" type="checkbox" name="ctl00$placeholdersidebar_0$chk_residenceType_Lejebolig" checked="checked"><label for="ctl00_placeholdersidebar_0_chk_residenceType_Lejebolig">Lejebolig</label></td>
+        </tr>
+        <tr>
+            <td><input id="ctl00_placeholdersidebar_0_chk_residenceType_LejeboligUngdomsbolig" type="checkbox" name="ctl00$placeholdersidebar_0$chk_residenceType_LejeboligUngdomsbolig"><label for="ctl00_placeholdersidebar_0_chk_residenceType_LejeboligUngdomsbolig">Ungdomsbolig</label></td>
+        </tr>
+        </tbody></table>                        
+    </div>
+</div>
+
+ 
+<div class="formSection darkBg padRightLarge">
+    <p id="ctl00_placeholdersidebar_0_selectionArea_facilities" class="mainArea cursorHand"><img src="FindBoligBSUnitTest4Results_files/section-collapsed.gif" alt="" title="" class="searchareaArrow"><b>Faciliteter </b></p>  
+    <br>  
+    <div class="selectionArea" id="a2">        
+    <table id="ctl00_placeholdersidebar_0_chkList_FacilitiesResidence_chklst_CheckBoxList">
+	<tbody><tr>
+		<td><span class="dbvalue" id="14"><input id="ctl00_placeholdersidebar_0_chkList_FacilitiesResidence_chklst_CheckBoxList_0" type="checkbox" name="ctl00$placeholdersidebar_0$chkList_FacilitiesResidence$chklst_CheckBoxList$0" value="14"><label for="ctl00_placeholdersidebar_0_chkList_FacilitiesResidence_chklst_CheckBoxList_0">Altan</label></span></td>
+	</tr>
+</tbody></table>    
+    <table id="ctl00_placeholdersidebar_0_chkList_FacilitiesBuilding_chklst_CheckBoxList">
+	<tbody><tr>
+		<td><span class="dbvalue" id="1"><input id="ctl00_placeholdersidebar_0_chkList_FacilitiesBuilding_chklst_CheckBoxList_0" type="checkbox" name="ctl00$placeholdersidebar_0$chkList_FacilitiesBuilding$chklst_CheckBoxList$0" value="1"><label for="ctl00_placeholdersidebar_0_chkList_FacilitiesBuilding_chklst_CheckBoxList_0">Elevator</label></span></td>
+	</tr><tr>
+		<td><span class="dbvalue" id="4"><input id="ctl00_placeholdersidebar_0_chkList_FacilitiesBuilding_chklst_CheckBoxList_1" type="checkbox" name="ctl00$placeholdersidebar_0$chkList_FacilitiesBuilding$chklst_CheckBoxList$1" value="4"><label for="ctl00_placeholdersidebar_0_chkList_FacilitiesBuilding_chklst_CheckBoxList_1">Gårdhave</label></span></td>
+	</tr><tr>
+		<td><span class="dbvalue" id="12"><input id="ctl00_placeholdersidebar_0_chkList_FacilitiesBuilding_chklst_CheckBoxList_2" type="checkbox" name="ctl00$placeholdersidebar_0$chkList_FacilitiesBuilding$chklst_CheckBoxList$2" value="12"><label for="ctl00_placeholdersidebar_0_chkList_FacilitiesBuilding_chklst_CheckBoxList_2">Husdyr forbudt</label></span></td>
+	</tr><tr>
+		<td><span class="dbvalue" id="6"><input id="ctl00_placeholdersidebar_0_chkList_FacilitiesBuilding_chklst_CheckBoxList_3" type="checkbox" name="ctl00$placeholdersidebar_0$chkList_FacilitiesBuilding$chklst_CheckBoxList$3" value="6"><label for="ctl00_placeholdersidebar_0_chkList_FacilitiesBuilding_chklst_CheckBoxList_3">Husdyr tilladt</label></span></td>
+	</tr><tr>
+		<td><span class="dbvalue" id="34"><input id="ctl00_placeholdersidebar_0_chkList_FacilitiesBuilding_chklst_CheckBoxList_4" type="checkbox" name="ctl00$placeholdersidebar_0$chkList_FacilitiesBuilding$chklst_CheckBoxList$4" value="34"><label for="ctl00_placeholdersidebar_0_chkList_FacilitiesBuilding_chklst_CheckBoxList_4">Internet</label></span></td>
+	</tr><tr>
+		<td><span class="dbvalue" id="9"><input id="ctl00_placeholdersidebar_0_chkList_FacilitiesBuilding_chklst_CheckBoxList_5" type="checkbox" name="ctl00$placeholdersidebar_0$chkList_FacilitiesBuilding$chklst_CheckBoxList$5" value="9"><label for="ctl00_placeholdersidebar_0_chkList_FacilitiesBuilding_chklst_CheckBoxList_5">Legeplads</label></span></td>
+	</tr><tr>
+		<td><span class="dbvalue" id="10"><input id="ctl00_placeholdersidebar_0_chkList_FacilitiesBuilding_chklst_CheckBoxList_6" type="checkbox" name="ctl00$placeholdersidebar_0$chkList_FacilitiesBuilding$chklst_CheckBoxList$6" value="10"><label for="ctl00_placeholdersidebar_0_chkList_FacilitiesBuilding_chklst_CheckBoxList_6">Parkering</label></span></td>
+	</tr><tr>
+		<td><span class="dbvalue" id="46"><input id="ctl00_placeholdersidebar_0_chkList_FacilitiesBuilding_chklst_CheckBoxList_7" type="checkbox" name="ctl00$placeholdersidebar_0$chkList_FacilitiesBuilding$chklst_CheckBoxList$7" value="46"><label for="ctl00_placeholdersidebar_0_chkList_FacilitiesBuilding_chklst_CheckBoxList_7">Seniorbolig</label></span></td>
+	</tr><tr>
+		<td><span class="dbvalue" id="13"><input id="ctl00_placeholdersidebar_0_chkList_FacilitiesBuilding_chklst_CheckBoxList_8" type="checkbox" name="ctl00$placeholdersidebar_0$chkList_FacilitiesBuilding$chklst_CheckBoxList$8" value="13"><label for="ctl00_placeholdersidebar_0_chkList_FacilitiesBuilding_chklst_CheckBoxList_8">Vaskeri</label></span></td>
+	</tr>
+</tbody></table>    
+    </div>
+</div>
+
+ 
+<div id="ctl00_placeholdersidebar_0_divRentPeriodArea" class="formSection darkBg padRightLarge">
+    <p id="selectionArea_RentPeriod" class="mainArea cursorHand"><img src="FindBoligBSUnitTest4Results_files/section-collapsed.gif" alt="" title="" class="searchareaArrow"><b>Lejeperiode</b></p>
+    <br>
+    <div class="selectionArea" id="a3">    
+        <table>
+        <tbody><tr>
+            <td><span class="enterEvent"><input id="ctl00_placeholdersidebar_0_chk_UnLimitedPeriod" type="checkbox" name="ctl00$placeholdersidebar_0$chk_UnLimitedPeriod" checked="checked"><label for="ctl00_placeholdersidebar_0_chk_UnLimitedPeriod">Ubegrænset</label></span></td>
+        </tr>
+        <tr>
+            <td><span class="enterEvent"><input id="ctl00_placeholdersidebar_0_chk_TimeLimited" type="checkbox" name="ctl00$placeholdersidebar_0$chk_TimeLimited" checked="checked"><label for="ctl00_placeholdersidebar_0_chk_TimeLimited">Tidsbegrænset</label></span></td>
+        </tr>
+        </tbody></table>
+    </div>
+</div>
+
+
+ 
+<div id="ctl00_placeholdersidebar_0_divOpenHouseArea" class="formSection darkBg padRightLarge">
+    <p id="selectionArea_OpenHouse" class="mainArea cursorHand"><img src="FindBoligBSUnitTest4Results_files/section-collapsed.gif" alt="" title="" class="searchareaArrow"><b>Åbent hus</b></p>
+    <br>
+    <div class="selectionArea" id="a4" style="padding-left:6px;">
+        <span class="enterEvent"><input id="ctl00_placeholdersidebar_0_chk_ShowOnlyOpenDay" type="checkbox" name="ctl00$placeholdersidebar_0$chk_ShowOnlyOpenDay"><label for="ctl00_placeholdersidebar_0_chk_ShowOnlyOpenDay">Kun boliger med åbent hus</label></span>
+    </div>
+</div>
+
+ 
+<div id="ctl00_placeholdersidebar_0_divMemberOfPensionFundArea" class="formSection darkBg padRightLarge">
+    <h2 style="margin-bottom:0px;font-size: 15px;">Medlem af pensionskasse</h2>
+   
+    <p>Er du medlem af en af nedenstående pensionskasser, kan du benytte dine medlemsfordele og få adgang til boliger med fortrinsret</p>   
+        
+    <p style="padding-top:4px;">
+        <select name="ctl00$placeholdersidebar_0$ddl_MemberOfPensionFounds" id="ctl00_placeholdersidebar_0_ddl_MemberOfPensionFounds" class="input195">
+	<option value="" selected="selected">Vælg pensionskasse</option>
+	<option value="/ap%20pension.aspx">AP Pension</option>
+	<option value="/lppension.aspx">Lærernes Pension</option>
+	<option value="/pplus.aspx">P+</option>
+	<option value="/pbu.aspx">PBU, Pædagogernes Pension</option>
+	<option value="/pensam.aspx">Pensam</option>
+	<option value="/PensionDanmark.aspx">PensionDanmark</option>
+	<option value="/Farmakonomer.aspx">Pensionskassen for Farmakonomer</option>
+	<option value="https://www.findbolig.nu/da-DK/LandingPages/PFApension">PFA (DEAS)</option>
+	<option value="/PKA.aspx">PKA</option>
+	<option value="/sampension.aspx">Sampension</option>
+	<option value="/LandingPages/tdcpensionskasse.aspx">TDC Pensionskasse</option>
+
+</select>
+        </p>
+    
+    
+</div>
+
+
+<div class="formSectionSubmit darkBg" style="padding: 10px; padding-left: 20px;padding-bottom:0px; margin-top:1px;">   
+        <div class="ButtonSubmit"><a id="butMapSearch" onclick="doSearchOnMap();return false;" href="#" style="display:inline-block;width:54px;">Vis kort</a></div>           
+        <div class="ButtonSubmit"><a id="butListSearch" onclick="doSearchOnList();" href="#" style="display:inline-block;width:54px;">Vis liste</a></div>                          
+        <br>
+        <p style="padding-left:0px;text-align:left;padding-right:10px;">
+            <a class="white" href="#" id="clearFields">Ryd felter</a>
+        </p>        
+        
+</div>
+
+<div id="createResidenceAgent" class="teaser highBottomBorder" onclick="renderResidenceAgent();return false;" style="cursor:pointer;"><img src="FindBoligBSUnitTest4Results_files/boligagent.gif" align="left">
+    <h2>Boligagent</h2>
+    <p>Opret en boligagent</p>
+</div>
+
+<input type="button" name="ctl00$placeholdersidebar_0$btnRedirectToLogin" value="" onclick="javascript:__doPostBack('ctl00$placeholdersidebar_0$btnRedirectToLogin','')" id="ctl00_placeholdersidebar_0_btnRedirectToLogin" style="display: none;">
+
+
+<input type="hidden" name="ctl00$placeholdersidebar_0$redirectUrl" id="ctl00_placeholdersidebar_0_redirectUrl">
+
+
+<input name="ctl00$placeholdersidebar_0$hdnTest" type="hidden" id="ctl00_placeholdersidebar_0_hdnTest" value="0">
+
+
+<script type="text/javascript">       
+
+    function renderResidenceAgent() {
+        var isPublicUserLoggedIn = '';
+        var searchListUrl = "/ledigeboliger/liste.aspx?&showrented=1&showyouth=1&showlimitedperiod=1&showunlimitedperiod=1&showOpenDay=0";
+
+        if (isPublicUserLoggedIn == '') {
+
+            // User not logged in. Redirect to login page.
+
+            if (UrlListResult.indexOf("liste.aspx") == -1 && UrlListResult.indexOf("kort.aspx") == -1) {
+                // Front search page.
+                document.getElementById('ctl00_placeholdersidebar_0_redirectUrl').value = searchListUrl;
+            } else if (UrlListResult.indexOf("kort.aspx") != -1) {
+                // Map search page.
+                document.getElementById('ctl00_placeholdersidebar_0_redirectUrl').value = "/ledigeboliger/liste.aspx?" + getQueryString().queryString + "&showdialog=1";
+            } else {
+                // List search page.
+                document.getElementById('ctl00_placeholdersidebar_0_redirectUrl').value = UrlListResult +"?" + getQueryString().queryString + "&showdialog=1";
+            }
+
+            document.getElementById('ctl00_placeholdersidebar_0_btnRedirectToLogin').click();
+        } else {
+
+            // User logged in - redirect to search list page.
+
+            if (UrlListResult.indexOf("liste.aspx") == -1 && UrlListResult.indexOf("kort.aspx") == -1) {
+                // Front search page.
+                document.location.href = searchListUrl;
+            } else if (UrlListResult.indexOf("kort.aspx") != -1) {
+                // Map search page.
+                document.location.href = "/ledigeboliger/liste.aspx?" + getQueryString().queryString + "&showdialog=1";
+            } else {
+                // List search page.
+                document.location.href = UrlListResult +"?" + getQueryString().queryString + "&showdialog=1";
+            }
+        }
+    }
+
+    setColHeightRun = false;
+    var collapsed = "/gfx/section-collapsed.gif";
+    var expanded = "/gfx/section-expanded.gif";
+    var whereDefaultText = "By, postnr";
+    var minDefaultText = "Min";
+    var maxDefaultText = "Max";
+    var focusField = "";
+    var lastRequestedQuery = null;
+    
+    
+        var UrlListResult = "/ledigeboliger/liste.aspx"; 
+        var UrlMapResult = "/ledigeboliger/kort.aspx"; 
+        var addressSearchServiceUrl = "/Services/GetAdvertAddressSearch.ashx";
+    
+
+    var venteliste = false;
+
+    $(document).ready(function () {
+        venteliste = $('False').val();
+
+        
+            $("#createResidenceAgent").css("display", "visible");
+        
+
+        $("#colLeft").css("background-color", "#fff");
+
+        
+        $(".mainArea").bind("click", function () {            
+            openCloseSelectionArea(this);
+        });
+
+          
+        $("#ctl00_placeholdersidebar_0_ddl_MemberOfPensionFounds").bind("change", function () {
+            if ($(this).val() == null || $(this).val() == "") {
+                document.location.href = "/";
+            } else {
+                document.location.href = $(this).val();
+            }
+        });
+       
+         
+        $("#ctl00_placeholdersidebar_0_txt_where").autocomplete('/Services/GetPostalCodes.ashx', {
+            delay: 400,
+            minChars: 4,
+            multiple: true, 
+            cacheLength: 1,
+            autoFill: false,
+            max:100,        
+            selectFirst: false,  
+            multipleSeparator: ", ",
+            dataType: "json",
+            parse: function (data) {
+                return $.map(data, function (row) {
+                    return {
+                        data: row,
+                        value: row.PostalCodeID + "",
+                        result: formatWhere(row)                        
+                    }
+                });
+            },
+            formatItem: function (item) {
+                return formatWhere(item);
+            }
+        }).result(function (e, item) {                        
+        });
+
+        function formatWhere(item) {
+            if ((item.PostalCodeID + "").length < 4) {
+                return item.City;
+            }else{
+                return item.City + " " + item.PostalCodeID;
+            }            
+        }
+
+          
+        $("#ctl00_placeholdersidebar_0_txt_Address").autocomplete(addressSearchServiceUrl, {
+            delay: 400,
+            minChars: 4,
+            multiple: false,           
+            dataType: "json",
+            cacheLength: 1,
+            autoFill: false,
+            max:100,        
+            selectFirst: false,             
+            parse: function (data) {
+                return $.map(data, function (row) {
+                    return {
+                        data: row,
+                        value: "0",
+                        result: formatAddressSearchResult(row)
+                    }
+                });
+            },
+            formatItem: function (item) {
+                return formatAddressSearchDropdown(item);
+            }
+        }).result(function (e, item) {
+            
+            //$("#where").append("<p>selected " + format(item) + "</p>");
+        }); 
+        
+        function formatAddressSearchDropdown(item) {
+           var res = "";
+
+           if(item.BuildingName.length > 0)
+           {
+                res += item.BuildingName + "<br />";
+           }
+                      
+            res +=  item.Address + "<br />";
+            res +=  item.PostalCode + " " + item.City;
+            return res;
+        }  
+        
+        function formatAddressSearchResult(item) {
+           var res = "";
+
+           if(item.BuildingName.length > 0)
+           {
+                res += item.BuildingName + ", ";
+           }
+                      
+            res +=  item.Address + " ";
+            res +=  item.PostalCode + " " + item.City;
+            return res;
+        }      
+
+                   
+       // $('.minvalue').numeric();
+       // $('.maxvalue').numeric();        
+        $('.minvalue').focusout(function() {                                                                            
+            if(this.value.length == 0)
+            {
+                resetMinValue(this);
+            }
+        });
+
+        $('.minvalue').focus(function() { 
+            clearField(this, minDefaultText,true);
+        });
+
+        $('.maxvalue').focusout(function() {                                                                            
+            if(this.value.length == 0)
+            {
+                resetMaxValue(this);
+            }
+        });
+        
+        $('.maxvalue').focus(function() {          
+            clearField(this, maxDefaultText,true);
+        });                        
+
+        $('#ctl00_placeholdersidebar_0_txt_where').focusout(function() {                                                                            
+            if(this.value.length == 0)
+            {
+                this.value = whereDefaultText;
+                this.style.color = "rgb(150,150,150)";
+            }
+        });        
+
+                  
+        $('#ctl00_placeholdersidebar_0_txt_where').change(function() {                                                                            
+        });     
+                                
+        $('.enterEvent').keyup(function(e) {                        
+            if (e.keyCode == 13) {             
+             focusField = e.target.id + "";
+             
+             if(mapLoaded)
+            {
+                var result = $('#ctl00_placeholdersidebar_0_txt_where').val();        
+	            result = (result == whereDefaultText? "" : result);                
+                if(result.length > 0)
+                {
+                    var bounds = getPostalBounds(result, function(){                        
+                        map.fitBounds(this);
+                        if(SearchSidebarArea_getWhereValue().length > 0 || SearchSidebarArea_getAddressValue().length > 0)
+                        {
+                            //We have an area search. Enable the button "vis all boliger i kortudsnit"
+                            mapViewAllButton.show();
+                        }
+                    });                    
+                }
+                else
+                {
+                    if('ctl00_placeholdersidebar_0_txt_where' == e.target.id + ""){
+                        showDenmark();
+                    }
+                    else{
+                        doSearch();                    
+                    }
+                }
+            }
+            else
+            {
+                doSearch();
+            }
+             
+             return false;
+            }           
+        });
+                                       
+        
+        $("#ctl00_placeholdersidebar_0_chk_MembersBenefits").bind("click", function () { 
+            doSearch();
+        });
+
+        $("#ctl00_placeholdersidebar_0_chk_residenceType_Lejebolig").bind("click", function () { 
+            doSearch();
+        });
+
+        $("#ctl00_placeholdersidebar_0_chk_residenceType_LejeboligUngdomsbolig").bind("click", function () { 
+            doSearch();
+        });
+        
+         $("#ctl00_placeholdersidebar_0_chk_UnLimitedPeriod").bind("click", function () { 
+            doSearch();
+        });    
+        
+         $("#ctl00_placeholdersidebar_0_chk_TimeLimited").bind("click", function () { 
+            doSearch();
+        });    
+        
+         $("#ctl00_placeholdersidebar_0_chk_ShowOnlyOpenDay").bind("click", function () { 
+            doSearch();
+        });                 
+        
+        $("#ctl00_placeholdersidebar_0_chkList_FacilitiesResidence_chklst_CheckBoxList").find('input:checkbox').bind("click", function () { 
+            doSearch();
+        });        
+
+        $("#ctl00_placeholdersidebar_0_chkList_FacilitiesBuilding_chklst_CheckBoxList").find('input:checkbox').bind("click", function () { 
+            doSearch();
+        });        
+       
+
+         
+        $("#lnk_InfoWhere").bind("click", function () {            
+             $('#ctl00_placeholdersidebar_0_popup_Help').modal();            
+        });   
+        
+          
+        $("#clearFields").bind("click", function () {            
+                var url = UrlListResult;
+                if(mapLoaded)
+                {
+                    url = UrlMapResult;
+                }
+                
+                
+                    document.location.href = url + "?showrented=1&showyouth=1&showlimitedperiod=1&showunlimitedperiod=1&showOpenDay=0";                
+                
+
+                return false;
+        });   
+
+        var selectedAreas = "";
+        setOpenSelectionAreas(selectedAreas);
+
+    }); //end document ready
+
+    function resetMaxValue(obj)
+    {
+        obj.value = maxDefaultText;
+        obj.style.color = "rgb(150,150,150)";
+    }
+        
+    function resetMinValue(obj)
+    {
+        obj.value = minDefaultText;
+        obj.style.color = "rgb(150,150,150)";
+    }
+
+    function openCloseSelectionArea(selected)
+    {
+        var img = $(selected).children(":first-child");
+        var selectionArea = $(selected).parent().children('.selectionArea');
+        if (img.attr("src") == collapsed) {
+            img.attr("src", expanded)
+            selectionArea.show();
+            setColHeight();
+        } else {
+            img.attr("src", collapsed)
+            selectionArea.hide();
+            setColHeight();
+        }
+    }
+    
+     
+    function doSearch()
+    {
+        if(!mapLoaded)
+        {
+            doSearchOnList();
+        }
+        else
+        {
+            doSearchOnMap();
+        }     
+    }
+
+    // Get key from url.
+    function getValueFromQueryString(key) {
+        key = key.replace(/[\[]/, "\\\[").replace(/[\]]/, "\\\]");
+        var regex = new RegExp("[\\?&]" + key + "=([^&#]*)");
+        var qs = regex.exec(window.location.href);
+
+        
+
+        if (qs == null)
+            return "";
+        else
+            return qs[1];
+    } 
+
+    
+    function doSearchOnList()
+    {
+        var sa = getValueFromQueryString('sa');
+        var url = UrlListResult + "?" + getQueryString().queryString;
+
+        if (sa != '') {
+            // Add search agent id to url if it already was in the url (edit mode).
+            url = url + '&sa=' + sa;
+        }
+
+        if (getValueFromQueryString('showdialog') == 1) {
+            // Remove showdialog value if found.
+            url = removeValueFromUrl(url, 'showdialog');
+            // Add showdialog with new value (keep dialog open).
+            url = url + "&showdialog=2";
+        } else if (getValueFromQueryString('showdialog') == 2) {
+            url = url + "&showdialog=2";
+        }
+
+        document.location.href = url;
+    } 
+
+    
+    function doSearchOnMap()
+    {
+        if(!mapLoaded)
+        {    
+            document.location.href = UrlMapResult + "?" + getQueryString().queryString;
+        }
+        else
+        {
+            searchOnMap();            
+            return false;
+        }
+    }       
+
+
+    function getWhere() {
+        return SearchSidebarArea_getWhereValue();
+    }
+
+    function getAddress() {
+        return $('#ctl00_placeholdersidebar_0_txt_Address').val();
+    }
+
+    function removeUnallowedChars(value) {
+        value = value.replace(";", ",");
+        value = value.replace("--", "-");
+        return value;
+    }
+
+    function getQueryString()
+    {	    
+        var querySearchSimple = new QuerySearchSimple();        
+        
+        //--- WHERE ---
+        var where = SearchSidebarArea_getWhereValue();      	    
+	    if(where.length > 0)
+	    {
+            where = removeUnallowedChars(where);
+		    querySearchSimple.queryString += "where=" + encodeURIComponent(where);
+            querySearchSimple.where = where;
+	    }        
+
+        //--- ADDRESS ---
+        var adr = $('#ctl00_placeholdersidebar_0_txt_Address').val();        	    
+	    if(adr.length > 0)
+	    {
+            adr = removeUnallowedChars(adr);
+		    querySearchSimple.queryString += "&adr=" + encodeURIComponent(adr);
+            querySearchSimple.freeSearch = adr;
+	    }        
+
+        //--- RENT ---
+        var rentmin = $('#ctl00_placeholdersidebar_0_txt_RentMin').val();        
+	    rentmin = (rentmin == minDefaultText? "" : rentmin);	    		
+	    
+        if(isNumber(rentmin))
+	    {
+		    querySearchSimple.queryString += "&rentmin=" + rentmin;
+            querySearchSimple.rentMin = rentmin;
+	    }
+        else{
+            resetMinValue($('#ctl00_placeholdersidebar_0_txt_RentMin')[0]);            
+        }
+
+        var rentmax = $('#ctl00_placeholdersidebar_0_txt_RentMax').val();        
+	    rentmax = (rentmax == maxDefaultText? "" : rentmax);
+	    if(isNumber(rentmax))
+	    {
+		    querySearchSimple.queryString += "&rentmax=" + rentmax;
+            querySearchSimple.rentMax  = rentmax;
+	    }
+        else{
+            resetMaxValue($('#ctl00_placeholdersidebar_0_txt_RentMax')[0]);
+        }
+
+        //--- ROOMS ---
+        var roomsmin = $('#ctl00_placeholdersidebar_0_txt_RoomsMin').val();        
+	    roomsmin = (roomsmin == minDefaultText? "" : roomsmin);	    		
+        if(isNumber(roomsmin))
+	    {
+		    querySearchSimple.queryString += "&roomsmin=" + roomsmin;
+            querySearchSimple.roomsMin = roomsmin;
+	    }else{
+            resetMinValue($('#ctl00_placeholdersidebar_0_txt_RoomsMin')[0]);
+        }
+
+        var roomsmax = $('#ctl00_placeholdersidebar_0_txt_RoomsMax').val();        
+	    roomsmax = (roomsmax == maxDefaultText? "" : roomsmax);
+	    if(isNumber(roomsmax))
+	    {
+		    querySearchSimple.queryString += "&roomsmax=" + roomsmax;
+            querySearchSimple.roomsMax = roomsmax;
+	    }else{
+           resetMaxValue($('#ctl00_placeholdersidebar_0_txt_RoomsMax')[0]);
+        }
+
+        //--- M2 ---
+        var m2min = $('#ctl00_placeholdersidebar_0_txt_M2Min').val();        
+	    m2min = (m2min == minDefaultText? "" : m2min);	    		
+	    if(isNumber(m2min))
+	    {
+		    querySearchSimple.queryString += "&m2min=" + m2min;
+            querySearchSimple.m2Min = m2min;
+	    }else{
+            resetMinValue($('#ctl00_placeholdersidebar_0_txt_M2Min')[0]);
+        }
+
+        var m2max = $('#ctl00_placeholdersidebar_0_txt_M2Max').val();        
+	    m2max = (m2max == maxDefaultText? "" : m2max);
+	    if(isNumber(m2max))
+	    {
+		    querySearchSimple.queryString += "&m2max=" + m2max;
+            querySearchSimple.m2Max = m2max;
+	    }else{
+            resetMaxValue($('#ctl00_placeholdersidebar_0_txt_M2Max')[0]);
+        }
+
+        //--- Floor ---
+        var floormin = $('#ctl00_placeholdersidebar_0_ddlFloorMin_ddl_DropDown').val();
+	    floormin = (floormin == minDefaultText? "" : floormin);
+        
+        // Empty ddl value has value -2 in sitecore.
+        // Only add to query string if floor >= -1.
+	    if(isNumber(floormin) || (isNegativeNumber(floormin) && floormin != -2))
+	    {
+		    querySearchSimple.queryString += "&floormin=" + floormin;
+            querySearchSimple.floorMin = floormin;
+	    }else{
+            resetMinValue($('#ctl00_placeholdersidebar_0_ddlFloorMin_ddl_DropDown')[0]);
+        }
+
+        var floormax = $('#ctl00_placeholdersidebar_0_ddlFloorMax_ddl_DropDown').val();
+	    floormax = (floormax == maxDefaultText? "" : floormax);
+	    // Empty ddl value has value -2 in sitecore.
+        // Only add to query string if floor >= -1.
+        if(isNumber(floormax) || (isNegativeNumber(floormax) && floormax != -2))
+	    {
+		    querySearchSimple.queryString += "&floormax=" + floormax;
+            querySearchSimple.floorMax = floormax;
+	    }else{
+            resetMaxValue($('#ctl00_placeholdersidebar_0_ddlFloorMax_ddl_DropDown')[0]);
+        }
+
+        //--- Members ---
+        if($('#ctl00_placeholdersidebar_0_chk_MembersBenefits').is(':checked'))
+        {
+            querySearchSimple.queryString += "&membersonly=1";
+            querySearchSimple.membersOnly = true;
+        }
+
+
+        //--- Residence type ---
+        if($('#ctl00_placeholdersidebar_0_chk_residenceType_Lejebolig').is(':checked'))
+        {            
+            querySearchSimple.queryString += "&showrented=1";
+            querySearchSimple.showRentedHousing = true;
+        }   
+        else
+        {
+            querySearchSimple.queryString += "&showrented=0";
+            querySearchSimple.showRentedHousing = false;
+        }             
+
+        if($('#ctl00_placeholdersidebar_0_chk_residenceType_LejeboligUngdomsbolig').is(':checked'))
+        {            
+            querySearchSimple.queryString += "&showyouth=1";   
+            querySearchSimple.showYouthHousing = true;         
+        } 
+        else
+        {
+            querySearchSimple.queryString += "&showyouth=0";   
+            querySearchSimple.showYouthHousing = false;
+        }
+        
+
+        //--- Advert Time limt period
+        if($('#ctl00_placeholdersidebar_0_chk_TimeLimited').is(':checked'))
+        {                    
+            querySearchSimple.queryString += "&showlimitedperiod=1";
+            querySearchSimple.ShowTimeLimitedPeriod = true;
+        }
+        else
+        {
+            querySearchSimple.queryString += "&showlimitedperiod=0";
+            querySearchSimple.ShowTimeLimitedPeriod = false;
+        } 
+        
+        if($('#ctl00_placeholdersidebar_0_chk_UnLimitedPeriod').is(':checked'))
+        {            
+            querySearchSimple.queryString += "&showunlimitedperiod=1";
+            querySearchSimple.ShowUnlimitedPeriod = true;
+        }          
+        else
+        {
+            querySearchSimple.queryString += "&showunlimitedperiod=0";
+            querySearchSimple.ShowUnlimitedPeriod = false;
+        }
+        
+        if($('#ctl00_placeholdersidebar_0_chk_ShowOnlyOpenDay').is(':checked'))
+        {            
+            querySearchSimple.queryString += "&showOpenDay=1";
+            querySearchSimple.showOpenDay = true;
+        }          
+        else
+        {
+            querySearchSimple.queryString += "&showOpenDay=0";
+            querySearchSimple.showOpenDay = false;
+        }              
+        
+
+        //--- facilities ---
+        var facilitiesres = getFacilities('ctl00_placeholdersidebar_0_chkList_FacilitiesResidence_chklst_CheckBoxList');
+        if(facilitiesres.length > 0)
+        {
+            querySearchSimple.queryString += "&facilitiesres=" + facilitiesres;
+            querySearchSimple.residenceFacilityList = facilitiesres;
+        }
+
+        var facilitiesbuild = getFacilities('ctl00_placeholdersidebar_0_chkList_FacilitiesBuilding_chklst_CheckBoxList');
+        if(facilitiesbuild.length > 0)
+        {
+            querySearchSimple.queryString += "&facilitiesbuild=" + facilitiesbuild;
+            querySearchSimple.buildingFacilityList = facilitiesbuild;
+        }
+
+        if(focusField.length > 0)
+        {
+            querySearchSimple.queryString += "&focus=" + focusField;
+        }
+
+        //Get opened selection areas
+        var openAreas = getOpenSelectionAreas();
+        if(openAreas.length > 0)
+        {
+            querySearchSimple.queryString += "&area=" + openAreas;
+        }
+
+        if(0 > 0){
+            querySearchSimple.queryString += "&pagesize=" + 0 + "";
+        }
+
+        if(mapLoaded)
+        {                       
+            querySearchSimple.zoom = map.getZoom();
+            querySearchSimple.queryString += "&z=" + querySearchSimple.zoom;
+
+            var mapBounds = map.getBounds();
+            var sw = mapBounds.getSouthWest();
+            var ne = mapBounds.getNorthEast();
+            querySearchSimple.xMax = sw.lat();
+            querySearchSimple.queryString += "&swlat=" + querySearchSimple.xMax;
+
+            querySearchSimple.xMin = sw.lng();   
+            querySearchSimple.queryString += "&swlng=" + querySearchSimple.xMin;
+
+            querySearchSimple.yMax = ne.lat();
+            querySearchSimple.queryString += "&nelat=" + querySearchSimple.yMax;
+
+            querySearchSimple.yMin = ne.lng();
+            querySearchSimple.queryString += "&nelng=" + querySearchSimple.yMin;            
+        }
+
+        lastRequestedQuery = querySearchSimple.queryString;
+        return querySearchSimple;
+    } // getQueryString() end
+
+    //--- getter functions ---
+    function SearchSidebarArea_getWhereValue()
+    {
+        //--- WHERE ---
+        var where = $('#ctl00_placeholdersidebar_0_txt_where').val();        
+	    where = (where == whereDefaultText? "" : where);	    		
+
+        return  where;	    
+    }
+
+    function SearchSidebarArea_getAddressValue()
+    {
+        return $('#ctl00_placeholdersidebar_0_txt_Address').val();        	    	    
+    }     
+    
+    function SearchSidebarArea_clearWhereAndAddressField()
+    {
+        $('#ctl00_placeholdersidebar_0_txt_Address').val("");
+        var where = $('#ctl00_placeholdersidebar_0_txt_where');
+        where.val(whereDefaultText);
+        where.css("color", "rgb(150,150,150)");        
+
+    }
+
+    function getFacilities(facilityControlID, urlParameterName)
+    {
+        //enable or disable input fields witin in each set of rules
+			    var selectionArea = $("#" + facilityControlID);
+                var checkboxes = $(selectionArea).find('input[type=checkbox]');
+			    
+                var res = "";                
+                $.each(checkboxes, function () {			        
+                    if($(this).is(':checked'))
+                    {
+                        res += $(this).parents("span")[0].id + ",";                                          
+                    }                    
+			    });      
+
+                if(res.length > 0)
+                {
+                    res = res.substring(0, res.length-1);
+                }
+
+                return res;
+    }    
+    
+    function getOpenSelectionAreas()
+    {        
+        var res="";
+        $.each($('.selectionArea'), function() {       
+            
+            // Small hack: a1 is reversed. residence type is visible at first load.
+            if($(this).css('display') == 'block' && this.id != "a1")
+            {
+                res += this.id + ",";                
+            }
+            else if ($(this).css('display') == 'none' && this.id == "a1")
+            {
+                res += this.id + ",";                
+            }
+        });
+
+        if(res.length>0)
+        {
+            //remove the last ,
+            res = res.substring(0,res.length-1);
+        }
+
+        return res;
+    }         
+
+    function setOpenSelectionAreas(val){
+        var area = val.split(',');
+
+        for(var i=0; i<area.length; i++)
+        {
+            var obj = $("#" + area[i]).siblings(".mainArea");
+            openCloseSelectionArea(obj);
+        }
+    }
+
+    // Used when user enter city and zip that does not match together.
+    // The page simply clears the where textfield and shows results.
+    function clearWhereTextbox() {
+        $('#ctl00_placeholdersidebar_0_txt_where').val('');
+    }
+</script><div></div>
+        <div id="ctl00_placeholdersidebar_0_popup_Help" class="noDisplay">
+	<div class="outerpair1"><div class="outerpair2"><div class="shadowbox"><div class="innerbox"><h1>Hjælp til søgning</h1>
+	
+		<p>
+      <strong>Adresse</strong>
+    </p>
+    <p>Søg på et område (fx 'Fyn'), en by (fx 'Vejle'), et eller flere 
+postnumre (fx '6000' eller '2210-8230' eller '2100, 2200, 2300').<br>Du kan også søge på ejendommens navn eller et vejnavn.</p>
+    <p>
+      <strong>Boligønsker</strong>
+    </p>
+    <p>Indtast dine ønsker for minimum- og maksimum husleje, antal værelser, boligareal og etage - eller lad felterne være tomme.</p>
+    <p>
+      <b>Boligtype og Faciliteter</b>
+    </p>
+    <p>Her kan du angive mere detaljerede ønsker til din bolig.<br>Giver
+ din søgning for mange boliger, kan du markere flere ønsker her. Giver 
+din søgning for få boliger, kan du prøve at fjerne dine markeringer.</p>
+    <p>
+      <strong>Medlem af pensionskasse</strong>
+    </p>
+    <p>Nogle pensionskasser giver deres medlemmer fortrinsret til 
+pensionskassens boliger. Vælg den pensionskasse, du er medlem af eller 
+har anden tilknytning til for at&nbsp;finde pensionskassens boliger.</p>
+    <p>
+      <strong>Søgning</strong>
+    </p>
+    <p>Klik på én af de to knapper i bunden for at søge boliger frem.<br>'Vis
+ kort' - her får du vist boligernes placering på et kort med røde pile. 
+Klik på en rød pil for at se mere information om den enkelte bolig.<br>'Vis
+ liste' - her får du vist boligerne med et billede, adresse og andre 
+informationer. Klik på billedet eller adressen for at se mere 
+information om den enkelte bolig.</p>
+    <p>
+      <strong>Boligagent</strong>
+    </p>
+    <p>Når du har lavet en boligsøgning, kan du nederst i det mørkegrå felt klikke på 'Boligagent' for at gemme din søgning. <br>Du kan gemme helt op til 10 boligagenter.</p>
+
+</div></div></div></div></div></div>
+        <div class="centerkolonne_mr" id="colCenter">
+            
+
+<div style="margin-top:1px;">
+	
+
+<script type="text/javascript">
+
+    var validateList = [
+	    ["ctl00_placeholdercontent_0_residenceAgent_tbxResidenceAgentName", 0, true, false],
+    ];
+
+    $(document).ready(function () {
+        // Default hide dialog.
+        $(".residenceAgent").css("display", "none");
+        $("#deleteResidenceAgentTD").css("display", "none");
+
+        if (getValueFromQueryString('sa') != '') {
+            // Edit mode.
+            $("#deleteResidenceAgentTD").css("display", "block");
+            $(".residenceAgent").css("display", "block");
+        } else if (getValueFromQueryString('showdialog') == 1) {
+            // Slide in the dialog. 'Opret boligagent' was clicked.
+            showResidenceAgentSlideEffect();
+        } else if (getValueFromQueryString('showdialog') == 2) {
+            // Show the dialog . 'Vis liste' was clicked.
+            $(".residenceAgent").css("display", "block");
+        }
+
+        // Save button. Method will save the residence agent.
+        $("#ctl00_placeholdercontent_0_residenceAgent_btnSaveShadow").bind("click", function () {
+            var res = submitForm();
+
+            if (res == true) {
+                saveResidenceAgent();
+            }
+            else {
+                // Input error.
+                $('.searchagentValidator').css('border', 'solid 2px #8b0e13');
+            }
+
+        });
+
+        // Saved popup ok button (after residence agent has been saved).
+        $("#ctl00_placeholdercontent_0_residenceAgent_btnSaveOKShadow").bind("click", function () {
+            document.getElementById('ctl00_placeholdercontent_0_residenceAgent_tbxResidenceAgentName').value = '';
+            hideResidenceAgentSlideEffect();
+
+            var url = UrlListResult + "?" + getQueryString().queryString;
+            url = removeValueFromUrl(url, 'sa');
+            url = removeValueFromUrl(url, 'showdialog');
+            document.location.replace = url;
+        });
+
+        // Delete button. Method will show confirm popup message.
+        $("#ctl00_placeholdercontent_0_residenceAgent_btnDeleteShadow").bind("click", function () {
+            $('#ctl00_placeholdercontent_0_residenceAgent_popupResidenceAgentDelete').modal();
+        });
+
+        // Delete popup ok button. Method will delete the residence agent.
+        $("#ctl00_placeholdercontent_0_residenceAgent_btnDeleteResidenceAgentOKShadow").bind("click", function () {
+            deleteResidenceAgent();
+        });
+    });
+
+     // Cancel button. Method will hide the residence agent dialog.
+     function cancelResidenceAgentDialog() {
+         clearError();
+         document.getElementById("errorBox").style.display = "none";
+         $('.searchagentValidator').css('border','2px gray');
+         
+         hideResidenceAgentSlideEffect();
+
+         var url = removeValueFromUrl(document.location.href, 'sa');
+         url = removeValueFromUrl(url, 'showdialog');
+         document.location.replace = url;
+     }
+
+     function hideResidenceAgentSlideEffect() {
+         $(".residenceAgent").slideUp("fast");
+     }
+
+     function showResidenceAgentSlideEffect() {
+         $(".residenceAgent").slideDown("fast");
+     }
+
+     function removeValueFromUrl(url, key) {
+         var urlparts = url.split('?');
+         if (urlparts.length >= 2) {
+             var prefix = encodeURIComponent(key) + '=';
+             var pars = urlparts[1].split(/[&;]/g);
+             for (var i = pars.length; i-- > 0; )
+                 if (pars[i].indexOf(prefix, 0) == 0)
+                     pars.splice(i, 1);
+             if (pars.length > 0)
+                 return urlparts[0] + '?' + pars.join('&');
+             else
+                 return urlparts[0];
+         }
+         else
+             return url;
+     }
+
+     // Save residence agent by AJAX call to server.
+     function saveResidenceAgent() {
+         var tbxAgentName = document.getElementById('ctl00_placeholdercontent_0_residenceAgent_tbxResidenceAgentName').value;
+         var address = getAddress(); // Search_SearchSidebarArea.ascx;
+         var where = getWhere(); // Search_SearchSidebarArea.ascx;
+
+         // Residence agent must have a name and where and address must have a value.
+         if (tbxAgentName == '' || (address == '' && where == '')) {
+             $('.searchagentValidator').css('border', 'solid 2px #8b0e13');
+             document.getElementById("errorBox").style.display = "block";
+            return;
+         }
+
+         var sa = getValueFromQueryString('sa');
+         var url = UrlListResult + "?" + getQueryString().queryString;
+
+         if (sa != '') {
+             // Add search agent id to url if it already was in the url (edit mode).
+             url = url + '&sa=' + sa;
+         }
+
+         url = url + '&name=' + tbxAgentName;
+
+         $.ajax({
+             type: "POST",
+             contentType: "application/json; charset=utf-8",
+             url: "/Services/SearchAgentService.asmx/SaveResidenceAgent",
+             data: "{urlString:'" + url + "'}",
+             success: function (msg) {
+                 if (msg.d.ResidenceAgentLimitHasBeenReached) {
+                     $('#ctl00_placeholdercontent_0_residenceAgent_popupResidenceAgentError').modal();
+                 }
+                 else {
+                     $('#ctl00_placeholdercontent_0_residenceAgent_popupResidenceAgentSaved').modal();
+                 }
+             }
+         });
+     }
+
+     // Delete residence agent by AJAX call to server.
+     function deleteResidenceAgent() {
+         var sa = getValueFromQueryString('sa');
+
+         if (sa != '') {
+             $.ajax({
+                 type: "POST",
+                 contentType: "application/json; charset=utf-8",
+                 url: "/Services/SearchAgentService.asmx/DeleteSearchAgent",
+                 data: "{searchAgentid:'" + sa + "'}",
+                 success: function (msg) {
+                     hideResidenceAgentSlideEffect();
+                     document.getElementById('ctl00_placeholdercontent_0_residenceAgent_tbxResidenceAgentName').value = '';
+                     
+                     var url = removeValueFromUrl(document.location.href, 'sa');
+                     url = removeValueFromUrl(url, 'showdialog');
+                     document.location.replace = url;
+                 },
+                 error: function (msg) {
+
+                 }
+             });
+         }
+     }
+
+     // Method will remove a value from the URL (based on a value key).
+     function removeValueFromQueryString(key) {
+         var url = $(location).attr('href');
+         var urlparts = url.split('?');
+
+         if (urlparts.length >= 2) {
+             var prefix = encodeURIComponent(key) + '=';
+             var pars = urlparts[1].split(/[&;]/g);
+
+             for (var i = pars.length; i-- > 0; ) {
+                 if (pars[i].indexOf(prefix, 0) == 0) {
+                     pars.splice(i, 1);
+                 }
+             }
+
+             if (pars.length > 0) {
+                 var t = urlparts[0] + '?' + pars.join('&');
+                 window.location.replace(urlparts[0] + '?' + pars.join('&'));
+             } else {
+                 window.location.replace(urlparts[0]);
+             }
+         }
+     }
+
+    // Method will remove a value from the URL (based on a value key).
+    function removeValueFromQueryString2(keys) {
+        var url = $(location).attr('href');
+        var urlparts = url.split('?');
+
+        if (urlparts.length >= 2) {
+            var url;
+
+            for (i = 0; i < keys.length; i++) {
+                var prefix = encodeURIComponent(keys[i]) + '=';
+                var pars = urlparts[1].split(/[&;]/g);
+
+                for (var j = pars.length; j-- > 0; ) {
+                    if (pars[j].indexOf(prefix, 0) == 0) {
+                        pars.splice(j, 1);
+                    }
+                }
+
+                if (pars.length > 0) {
+                    var t = urlparts[0] + '?' + pars.join('&');
+                    url = url + urlparts[0] + '?' + pars.join('&');
+                } else {
+                    url = url + urlparts[0];
+                }
+            }
+
+            window.location.replace(url);
+        }
+    }
+
+     // Method will get a value from the URL (based on a value key).
+     function getValueFromQueryString(key) {
+         key = key.replace(/[\[]/, "\\\[").replace(/[\]]/, "\\\]");
+         var regex = new RegExp("[\\?&]" + key + "=([^&#]*)");
+         var qs = regex.exec(window.location.href);
+
+         if (qs == null) {
+             return "";
+         } else {
+             return qs[1];
+         }
+     }
+
+</script>
+<div style="margin-top: 21px;">
+    <div id="errorBox">
+        
+		<p>
+    </p>
+    <h2>Ugyldig indtasting</h2>
+    <p>
+    </p>
+    <p>Et eller flere felter er udfyldt forkert. De er markeret med rødt.</p>      
+    </div>
+
+    <div class="formSectionStart residenceAgent" style="display: none;">
+        <b>Opret søgning som boligagent:</b>
+        <br>
+        <br>
+    
+        <table>
+            <tbody><tr>
+                <td rowspan="2">
+                    <img src="FindBoligBSUnitTest4Results_files/boligagent2.gif" style="vertical-align: bottom;">
+                </td>
+                <td style="vertical-align:bottom; padding-left: 10px;">
+                    Boligagentens navn:
+                </td>
+            </tr>
+            
+            <tr>
+                <td style="vertical-align:middle; padding-left: 10px;">
+                    <input name="ctl00$placeholdercontent_0$residenceAgent$tbxResidenceAgentName" type="text" maxlength="19" id="ctl00_placeholdercontent_0_residenceAgent_tbxResidenceAgentName" class="input200">
+                </td>
+                <td style="vertical-align:middle; padding-left: 10px;">
+                    <div class="ButtonSubmit"><a href="#" id="ctl00_placeholdercontent_0_residenceAgent_btnSaveShadow">Gem</a></div>
+                </td>
+                <td id="deleteResidenceAgentTD" style="vertical-align: middle; display: none;">
+                    <div class="ButtonNormal"><a href="#" id="ctl00_placeholdercontent_0_residenceAgent_btnDeleteShadow">Slet</a></div>
+                </td>
+                <td style="vertical-align:middle; padding-left: 2px;">
+                    <div class="ButtonNormal"><a id="lnkCancel" href="javascript:cancelResidenceAgentDialog();" style="display: inline-block;">Annuller</a></div>
+                </td>
+            </tr>
+        </tbody></table>
+
+        <br>
+    </div>
+</div>
+
+<div id="ctl00_placeholdercontent_0_residenceAgent_popupResidenceAgentSaved" class="noDisplay">
+	<div class="outerpair1"><div class="outerpair2"><div class="shadowbox"><div class="innerbox"><h1>Boligagenten er gemt</h1>
+	
+		<p>Din boligagent er nu gemt, og du vil få tilsendt en e-mail og/eller SMS, når der er nye boligannoncer, der matcher.</p>
+
+	
+    <div class="formSectionSubmit">
+        <div class="ButtonSubmit simplemodal-close"><a href="#" id="ctl00_placeholdercontent_0_residenceAgent_btnSaveOKShadow">Ok</a></div>
+    </div>
+
+</div></div></div></div></div>
+
+<div id="ctl00_placeholdercontent_0_residenceAgent_popupResidenceAgentError" class="noDisplay">
+	<div class="outerpair1"><div class="outerpair2"><div class="shadowbox"><div class="innerbox"><h1>Boligagenten blev ikke gemt</h1>
+	
+		<p>Du kan max. oprette 10 boligagenter.</p>
+    <p>Ønsker du at gemme denne søgning, skal du først slette en af dine andre boligagenter.</p>
+	
+    <div class="formSectionSubmit">
+        <div class="ButtonSubmit simplemodal-close"><a href="#" id="ctl00_placeholdercontent_0_residenceAgent_ctl01">Ok</a></div>
+    </div>
+
+</div></div></div></div></div>
+
+<div id="ctl00_placeholdercontent_0_residenceAgent_popupResidenceAgentDelete" class="noDisplay">
+	<div class="outerpair1"><div class="outerpair2"><div class="shadowbox"><div class="innerbox"><h1>Bekræft sletning af boligagenten</h1>
+	
+		<p>Er du sikker på, at du vil slette boligagenten? <br>Du kan ikke fortryde, når først den er slettet.</p>
+
+	
+    <div class="formSectionSubmit">
+        <div class="ButtonSubmit simplemodal-close"><a href="#" id="ctl00_placeholdercontent_0_residenceAgent_btnDeleteResidenceAgentOKShadow">Slet</a></div>  
+        <div class="ButtonNormal simplemodal-close"><a href="#" id="ctl00_placeholdercontent_0_residenceAgent_btnDeleteCancel">Annuller</a></div>
+    </div>
+
+</div></div></div></div></div>
+	<div id="ctl00_placeholdercontent_0_FbnTable1_panel_TabelHeader">
+	
+    <div id="gridPagesTop">
+    <table width="100%" cellspacing="0" cellpadding="0" border="0">
+    <tbody><tr>
+	    <td class="gridLabelLeftTop">
+		    <div><span id="ctl00_placeholdercontent_0_FbnTable1_lab_ResidencesFoundTop">4 Resultater</span></div>
+	    </td>
+	    <td width="90%">
+		    
+<table cellspacing="0" cellpadding="0" border="0">
+<tbody><tr>
+    <td><img alt="" src="FindBoligBSUnitTest4Results_files/kontrolbjaelke-ikon-pil-venstre-d.gif" style="border-width:0px;"> </td><td><span>1</span></td><td><img alt="" src="FindBoligBSUnitTest4Results_files/kontrolbjaelke-ikon-pil-hoejre-d.gif" style="border-width:0px;"> </td>            
+</tr>
+</tbody></table>       
+	    </td>
+	    <td class="gridLabelRightTop">       
+		    <div><a href="https://findbolig.nu/ledigeboliger/liste.aspx?&amp;adr=Margretheholmsvej&amp;rentmax=15000&amp;m2min=50&amp;showrented=1&amp;showyouth=0&amp;showlimitedperiod=1&amp;showunlimitedperiod=1&amp;showOpenDay=0&amp;page=1&amp;pagesize=100" id="ctl00_placeholdercontent_0_FbnTable1_hrefShowResultsPerPage"><span id="ctl00_placeholdercontent_0_FbnTable1_lbt_ShowResultsPerPageTop">Vis 100 resultater pr. side</span></a></div>
+	    </td>
+    </tr>
+    </tbody></table>
+    </div>
+
+</div>
+
+<div id="grid">    
+    <div>
+	    <table class="gridTable" rules="all" id="GridView_Results" style="border-width:0px;border-style:None;width:100%;border-collapse:collapse;" cellspacing="0" border="0">
+		
+                <tbody><tr class="headerstyle">
+			        <th class="nosorting" scope="column" style="width:90px;padding-left:0;padding-right:0;" align="left"></th><th scope="column" style="width:170px;" align="left"><a href="https://findbolig.nu/ledigeboliger/liste.aspx?&amp;adr=Margretheholmsvej&amp;rentmax=15000&amp;m2min=50&amp;showrented=1&amp;showyouth=0&amp;showlimitedperiod=1&amp;showunlimitedperiod=1&amp;showOpenDay=0&amp;sortkey=Address1&amp;sortdir=asc">Adresse</a></th><th scope="column" style="width:30px;" align="left"><a href="https://findbolig.nu/ledigeboliger/liste.aspx?&amp;adr=Margretheholmsvej&amp;rentmax=15000&amp;m2min=50&amp;showrented=1&amp;showyouth=0&amp;showlimitedperiod=1&amp;showunlimitedperiod=1&amp;showOpenDay=0&amp;sortkey=Rooms&amp;sortdir=asc">Vær.</a></th><th scope="column" style="width:40px;" align="left"><a href="https://findbolig.nu/ledigeboliger/liste.aspx?&amp;adr=Margretheholmsvej&amp;rentmax=15000&amp;m2min=50&amp;showrented=1&amp;showyouth=0&amp;showlimitedperiod=1&amp;showunlimitedperiod=1&amp;showOpenDay=0&amp;sortkey=m2&amp;sortdir=asc">Kvm</a></th><th scope="column" style="width:85px;" align="left"><a href="https://findbolig.nu/ledigeboliger/liste.aspx?&amp;adr=Margretheholmsvej&amp;rentmax=15000&amp;m2min=50&amp;showrented=1&amp;showyouth=0&amp;showlimitedperiod=1&amp;showunlimitedperiod=1&amp;showOpenDay=0&amp;sortkey=RentMonthly&amp;sortdir=asc">Husleje/aconto</a></th><th scope="column" style="width:85px;" align="left"><a href="https://findbolig.nu/ledigeboliger/liste.aspx?&amp;adr=Margretheholmsvej&amp;rentmax=15000&amp;m2min=50&amp;showrented=1&amp;showyouth=0&amp;showlimitedperiod=1&amp;showunlimitedperiod=1&amp;showOpenDay=0&amp;sortkey=AvailableDate&amp;sortdir=asc">Ledig fra</a></th><th scope="column" style="width:95px;" align="left"><a href="https://findbolig.nu/ledigeboliger/liste.aspx?&amp;adr=Margretheholmsvej&amp;rentmax=15000&amp;m2min=50&amp;showrented=1&amp;showyouth=0&amp;showlimitedperiod=1&amp;showunlimitedperiod=1&amp;showOpenDay=0&amp;sortkey=WaitCompanyID&amp;sortdir=asc"></a></th>            
+		        </tr>        
+        
+            <tr class="rowstyle" aid="46835" valign="top">
+	<td class="imgCol"><a class="advertLink" href="https://findbolig.nu/bolig.aspx?aid=46835&amp;s=2"><img src="FindBoligBSUnitTest4Results_files/f1dfe27a-02e6-4161-8d92-931e75f4a61e_90x60.jpg"></a></td><td><a title="Margretheholmen" class="advertLink" href="https://findbolig.nu/bolig.aspx?aid=46835&amp;s=2" style="color:black;" xpath="1"><b>Margretheholmsvej  4, 6. th</b><br>1432 København K</a></td><td style="text-align:center;">4</td><td style="text-align:center;">92</td><td style="text-align:right;">14.124,00 kr.<br>510,00 kr.</td><td style="text-align:right;">15-05-2021</td><td style="height:52px;width:100px;text-align:center;vertical-align:middle;padding-left:0px;padding-right:0px;"><img title="PKA_Logo_2014" src="FindBoligBSUnitTest4Results_files/23faf18d-8f50-4b55-97e1-060dac0f8372.png" alt="PKA_Logo_2014"></td>
+</tr><tr class="rowstyle" aid="46674" valign="top">
+	<td class="imgCol"><a class="advertLink" href="https://findbolig.nu/bolig.aspx?aid=46674&amp;s=2"><img src="FindBoligBSUnitTest4Results_files/f1dfe27a-02e6-4161-8d92-931e75f4a61e_90x60.jpg"></a></td><td><a title="Margretheholmen" class="advertLink" href="https://findbolig.nu/bolig.aspx?aid=46674&amp;s=2" style="color:black;"><b>Margretheholmsvej  46, 1. th</b><br>1432 København K</a></td><td style="text-align:center;">4</td><td style="text-align:center;">92</td><td style="text-align:right;">13.624,00 kr.<br>960,00 kr.</td><td style="text-align:right;">01-05-2021</td><td style="height:52px;width:100px;text-align:center;vertical-align:middle;padding-left:0px;padding-right:0px;"><img title="PKA_Logo_2014" src="FindBoligBSUnitTest4Results_files/23faf18d-8f50-4b55-97e1-060dac0f8372.png" alt="PKA_Logo_2014"></td>
+</tr><tr class="rowstyle" aid="46673" valign="top">
+	<td class="imgCol"><a class="advertLink" href="https://findbolig.nu/bolig.aspx?aid=46673&amp;s=2"><img src="FindBoligBSUnitTest4Results_files/f1dfe27a-02e6-4161-8d92-931e75f4a61e_90x60.jpg"></a></td><td><a title="Margretheholmen" class="advertLink" href="https://findbolig.nu/bolig.aspx?aid=46673&amp;s=2" style="color:black;"><b>Margretheholmsvej  34, 5. tv</b><br>1432 København K</a></td><td style="text-align:center;">4</td><td style="text-align:center;">99</td><td style="text-align:right;">14.776,49 kr.<br>1.030,00 kr.</td><td style="text-align:right;">01-05-2021</td><td style="height:52px;width:100px;text-align:center;vertical-align:middle;padding-left:0px;padding-right:0px;"><img title="PKA_Logo_2014" src="FindBoligBSUnitTest4Results_files/23faf18d-8f50-4b55-97e1-060dac0f8372.png" alt="PKA_Logo_2014"></td>
+</tr><tr class="rowstyle" aid="46401" valign="top">
+	<td class="imgCol"><a class="advertLink" href="https://findbolig.nu/bolig.aspx?aid=46401&amp;s=2"><img src="FindBoligBSUnitTest4Results_files/o_1b7n82mvvcq6fn81clsqba1aeaf_90x60.jpg"></a></td><td><a title="Margretheholmen" class="advertLink" href="https://findbolig.nu/bolig.aspx?aid=46401&amp;s=2" style="color:black;"><b>Margretheholmsvej  24, 4. th</b><br>1432 København K</a></td><td style="text-align:center;">3</td><td style="text-align:center;">98</td><td style="text-align:right;">14.776,49 kr.<br>1.020,00 kr.</td><td style="text-align:right;">01-05-2021</td><td style="height:52px;width:100px;text-align:center;vertical-align:middle;padding-left:0px;padding-right:0px;"><img title="PKA_Logo_2014" src="FindBoligBSUnitTest4Results_files/23faf18d-8f50-4b55-97e1-060dac0f8372.png" alt="PKA_Logo_2014"></td>
+</tr>
+	    </tbody></table>
+    </div>
+</div>
+
+
+
+
+<div id="ctl00_placeholdercontent_0_FbnTable1_panel_TabelFooter">
+	
+<div id="gridPagesBottom">
+    <table width="100%" cellspacing="0" cellpadding="0" border="0">
+    <tbody><tr>
+	    <td class="gridLabelLeftTop">
+		    <div><span id="ctl00_placeholdercontent_0_FbnTable1_lab_ResidencesFoundTop">4 Resultater</span></div>
+	    </td>
+	    <td width="90%">
+		    
+<table cellspacing="0" cellpadding="0" border="0">
+<tbody><tr>
+    <td><img alt="" src="FindBoligBSUnitTest4Results_files/kontrolbjaelke-ikon-pil-venstre-d.gif" style="border-width:0px;"> </td><td><span>1</span></td><td><img alt="" src="FindBoligBSUnitTest4Results_files/kontrolbjaelke-ikon-pil-hoejre-d.gif" style="border-width:0px;"> </td>            
+</tr>
+</tbody></table>       
+	    </td>
+	    <td class="gridLabelRightTop">       
+		    <div><a href="https://findbolig.nu/ledigeboliger/liste.aspx?&amp;adr=Margretheholmsvej&amp;rentmax=15000&amp;m2min=50&amp;showrented=1&amp;showyouth=0&amp;showlimitedperiod=1&amp;showunlimitedperiod=1&amp;showOpenDay=0&amp;page=1&amp;pagesize=100" id="ctl00_placeholdercontent_0_FbnTable1_hrefShowResultsPerPage"><span id="ctl00_placeholdercontent_0_FbnTable1_lbt_ShowResultsPerPageTop">Vis 100 resultater pr. side</span></a></div>
+	    </td>
+    </tr>
+    </tbody></table>
+    </div>    
+<script type="text/javascript">
+    $(document).ready(function () {
+        if ($("#gridPagesBottom").length > 0) {
+            $("#gridPagesBottom").html($("#gridPagesTop").html());
+            /*
+            var indholdsomraade = $(".indholdsomraade").height();
+
+            if ($("#colCenter").height() < indholdsomraade) {
+                $("#colCenter").height(indholdsomraade);
+            }
+            else {
+                $("#colCenter").height(351);
+            }*/
+        }
+    });
+
+</script>              
+
+</div>
+</div>
+<script type="text/javascript">
+	$(document).ready(function () {
+		setTimeout('window.scrollTo(0, 0)', 1);
+
+        const querystringWithTop = "/ledigeboliger/liste.aspx?&adr=Margretheholmsvej&rentmax=15000&m2min=50&showrented=1&showyouth=0&showlimitedperiod=1&showunlimitedperiod=1&showOpenDay=0&top= + $(window).scrollTop())";
+
+		$('.advertLink').click(function () {
+            setBaseCookie(SEARCHRESULTADVERT, querystringWithTop);
+		});
+    });
+
+    function clearWhereTextfieldOnSidebarPage() {
+        clearWhereTextbox();
+    }
+</script>
+        </div>
+
+        <br style="clear: both;">
+    </div>
+    
+<div class="sidefod" id="footerArea">
+        <div class="reklame">
+                                   
+       <!--     -->
+        </div>
+        
+    </div>
+    <script type="text/javascript">
+
+        $(document).ready(function() {
+            setColHeight();
+        });            
+    </script>
+  
+
+<script type="text/javascript">
+//<![CDATA[
+clearWhereTextfieldOnSidebarPage();//]]>
+</script>
+</form>    
+  
+
+<div id="kVCQALmHehYl" style="display: none;"></div></body></html>

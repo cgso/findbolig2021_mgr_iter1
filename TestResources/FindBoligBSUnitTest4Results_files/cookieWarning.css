@@ -1,0 +1,60 @@
+.cookie {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 120px;
+    background-color: #AFC316;
+    color: #FFF;
+    overflow: hidden;
+    z-index: 200;
+}
+.cookie > div {
+    color: #FFF;
+    width: 976px;
+    margin: 0 auto 0 auto;
+    overflow: hidden;
+}
+
+.cookie > div * {
+    margin-left: 0;
+    padding-left: 0;
+    color: #FFF;
+}
+
+.cookie > div h2 {
+    font-size: 16px;
+    margin: 14px 0 5px 0;
+    padding: 0;
+}
+
+.cookie > div p {
+    margin: 0 0 5px 0;
+    padding: 0;
+    font-size: 12px;
+}
+
+.cookie > div a {
+    color: #FFF;
+    text-decoration: underline;
+}
+
+.cookie > div a:hover {
+    color: #FFF;
+    text-decoration: underline;
+}
+
+.cookie > div button {
+    background-color: #AFC316;
+    border: 1px solid #FFF;
+    padding: 5px 10px 5px 10px;
+    cursor: pointer;
+}
+
+.cookie > div button:hover {
+    border: 1px solid rgb(195,215,42);
+}
+
+.cookieText {
+    display: none;
+}

@@ -12,7 +12,7 @@ class FindBoligNotification:
         self.apartmentsList = ApartmentList()
 
     def AppendApartmentToMessage(self, apartmentObj):
-        self.apartmentsList.AppendApartment(apartmentObj)
+        self.apartmentsList.AppendApartmentToList(apartmentObj)
 
     #Generate some HTML based on the apartments found in the List
     def ReturnApartmentsListToHtml(self):
@@ -20,7 +20,7 @@ class FindBoligNotification:
         for apartment in self.apartmentsList.GetList():
             ':type apartment: Apartment'
             html += '<tr><td><a href="{url}">{address}</a></td><td>{price},0 kr.</td><td>{sqm}</td></tr>'. \
-            format(url=apartment.apartmentURL, address=apartment.streetAddress + " " + apartment.postalcode, price=apartment.rent, sqm=apartment.sqm)
+            format(url=apartment.apartmentURL, address="{0} {1}".format(apartment.streetAddress, apartment.postalcode), price=apartment.rent, sqm=apartment.sqm)
         html += "</table>"
         return html
     
@@ -34,5 +34,8 @@ class FindBoligNotification:
 			"to": self.recipientsList,
 			"subject": subject,
 			"html": html})
+        #Tell the list that an e-mail has been sent and persist to DB
+        if r.status_code == 200:
+            self.apartmentsList.PersistEmailSent()
         return r.status_code
 

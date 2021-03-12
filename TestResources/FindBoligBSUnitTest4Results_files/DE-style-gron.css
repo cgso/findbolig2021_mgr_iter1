@@ -1,0 +1,181 @@
+.controlPanButtonActive 
+{
+    background-image: url(/gfx/kontrolbjaelke-knap-gron-a.gif);
+    background-color: rgb(177,200,0);    
+}
+
+.controlPanButton:hover {
+
+    background-image: url(/gfx/kontrolbjaelke-knap-gron-h.gif);
+    background-color: rgb(208,215,156);
+}
+			#topmenu {
+				background-image: url(/gfx/topmenu-bg-gron.gif);
+				border-bottom-color: #666666;
+			}
+
+			#topmenu p.menuActive {
+				background-image: url(/gfx/topmenu-bg-gron-a-venstre.gif);
+			}
+
+			#topmenu p.menuActive a {
+				background-image: url(/gfx/topmenu-bg-gron-a-hojre.gif);
+			}
+			
+			#topmenu a {
+				color: #000000;
+			}
+
+
+
+			#topmenu p.menu a {
+				color: #000000;
+			}				
+
+			.reklame {
+				background-image: url(/gfx/sidefod-gron.gif);
+				background-repeat: repeat-x;
+			}
+			
+	
+			.formSectionSubmit input[type="submit"]
+			{
+
+				background-color: #009ee0;
+				background-image: url(/gfx/knap-gron-120.png);
+
+			}	
+			
+					
+			
+			.formSectionSubmit input[type="submit"]:hover
+			{
+				background-image: url(/gfx/knap-gron-120-h.png);
+			}
+			
+			.formSectionSubmit input[type="submit"]:active
+			{
+				background-image: url(/gfx/knap-gron-120-f.png);
+			}	
+			
+			.formSectionSubmit input[type="submit"].w190
+			{
+
+				background-color: #009ee0;
+				background-image: url(/gfx/knap-gron-190.png);
+
+			}	
+			
+					
+			
+			.formSectionSubmit input[type="submit"].w190:hover
+			{
+				background-image: url(/gfx/knap-gron-190-h.png);
+			}
+			
+			.formSectionSubmit input[type="submit"].w190:active
+			{
+				background-image: url(/gfx/knap-gron-190-f.png);
+			}		
+								
+        /* GridView */
+        
+        .gridTable .headerstyle th:hover 
+        {
+	        background: url(/gfx/kontrolbjaelke-knap-gron-h.gif) repeat-x 0 0;
+        }  
+        
+
+        .gridTable .headerstyle th 
+        {
+	        background: url(/gfx/kontrolbjaelke-knap-gron-h.gif) repeat-x 0 -20px;
+        }        
+        
+        
+        .gridTable .headerstyle .sortascheader:hover  
+        {
+            background: url(/gfx/kontrolbjaelke-knap-gron-a.gif) repeat-x 0 0;
+        }                 
+       
+        .gridTable .headerstyle .sortascheader, .gridTable .headerstyle .sortdescheader 
+        {
+            background: url(/gfx/kontrolbjaelke-knap-gron-a.gif) repeat-x 0 0;
+        }   
+        
+       .gridTable .headerstyle .sortascheader a 
+        {
+            background: url(/gfx/sortering-gron-op.png) no-repeat right;
+        } 
+
+        .gridTable .headerstyle .sortdescheader a 
+        {
+            background: url(/gfx/sortering-gron-ned.png) no-repeat right;
+        }      
+        
+.leftColFixed a:hover, .leftColFixed .mLevel2 a:hover, .leftColFixed .mLevel3 a:hover
+{
+     background-color:#b1c800;
+} 			
+
+/* Buttons */
+
+        div.ButtonSubmit, div.ButtonSubmitRightAligned 
+        {
+            background-image: url(/gfx/knap-gron-120-venstre.png);            
+        }
+        
+        div.ButtonSubmit a, div.ButtonSubmitRightAligned a
+        {         
+            background-image: url(/gfx/knap-gron-120-hoejre.png); 
+        }
+        
+        div.ButtonSubmit a[disabled], div.ButtonNormal a[disabled], .formSectionSubmit input[disabled]
+        {
+           color: gray;
+           cursor: pointer; cursor: hand;
+        }        
+
+.controlBar a:hover
+{
+    background-image: url(/gfx/kontrolbjaelke-knap-gron-h.gif);
+}
+
+#gridPagesBottom table table td, #gridPagesTop table table td
+{
+    background: url(/gfx/kontrolbjaelke-knap-gron-h.gif) repeat-x 0 -20px;
+}
+
+#gridPagesBottom table table td:hover, #gridPagesTop table table td:hover
+{
+    background: url(/gfx/kontrolbjaelke-knap-gron-h.gif) repeat-x 0 0;
+}
+              
+p.userName 
+{
+    color: rgb(166,187,0);
+}              
+
+.portalBottom 
+{
+    border-top: 4px solid rgb(177,200,0);
+}
+
+.portalMid 
+{
+    border-top: 4px solid rgb(177,200,0);
+}
+
+.portalBottomRight, .portalBottomMid 
+{
+     border-left: 1px solid rgb(177,200,0);
+}
+
+.portalBottomleft 
+{
+     border-left: 1px solid rgb(255,255,255);
+}
+
+p.logo 
+{
+    background-image: url(/gfx/head/logo-green.gif);
+}

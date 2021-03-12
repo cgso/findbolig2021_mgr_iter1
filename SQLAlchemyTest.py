@@ -4,9 +4,30 @@ from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 import sqlite3
 
+#Declaring Base Class - assuming singleton behavior for each instantion of base from Base()
 Base = declarative_base()
-engine = create_engine('sqlite:///testalchemy.db')
+engine = create_engine('sqlite:///findbolig_alchemy.db')
 
+#Generic SingleTon pattern that can be used as metaclasses to make otherwise normal classes into singletons.... 
+class Singleton(type):
+    _instances = {}
+    def __call__(cls, *args, **kwargs):
+        if cls not in cls._instances:
+            cls._instances[cls] = super(Singleton, cls).__call__(*args, **kwargs)
+        return cls._instances[cls]
+        
+#Class will act as Singleton when instantied - metaclass=Singleton defines the metaclass for the class
+class BaseSingleton(metaclass=Singleton):
+    def __init__(self):
+        self.Base = declarative_base()
+        
+
+
+
+
+
+
+#Example implementation - to be performed in Classes instead. Must refernece SQLAlchemTest.py
 
 class User(Base):
     __tablename__ = "users"
@@ -34,5 +55,5 @@ print(our_user)
 
 our_user.fullname = "Test"
 session.commit()
-our_user = session.query(User).filter_by(name='ed').first()
+our_user = session.query(User).filter_by(name='de').count()
 print(our_user)
