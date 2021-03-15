@@ -8,6 +8,7 @@ from Classes import Apartment
 from PythonConfig import VPy
 import Applier
 import Logger
+import sys
 
 def ScrapeAllAptQueriesAndUpdateDB():
     ## Loading SiteQueries from DB and passing as constructor argument, so that allAptQueries is initialized.
@@ -69,13 +70,26 @@ def PerformEmailActions():
         if VPy:
             print("No apartments required any email actions")
 
-Persistence.DropTablesandPopulateAptQueries()
+def ClearDBAndCreateOneAptQuery():
+    Persistence.DropTablesandPopulateAptQueries()
 
-print("Scraping apartments")
-ScrapeAllAptQueriesAndUpdateDB()
+if len(sys.argv) > 1:
+    programToRun = sys.argv[1]
+    argument = str(sys.argv[1])
+    if argument == "-clear":
+        ClearDBAndCreateOneAptQuery()
+    elif argument == "-scrape":
+        ScrapeAllAptQueriesAndUpdateDB()
+    elif argument == "-email":
+        PerformEmailActions()
+    elif argument == "-apply":
+        PerformApplication()
 
-print("Applying apartments")
-PerformApplication()
+#print("Scraping apartments")
+#ScrapeAllAptQueriesAndUpdateDB()
 
-print("Performing actions")
-PerformEmailActions()
+#print("Applying apartments")
+#PerformApplication()
+
+#print("Performing actions")
+#PerformEmailActions()
