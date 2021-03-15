@@ -3,4 +3,5 @@
 testalchemy.db
 test.db
 __pycache__
-
+findbolig.log
+geckodriver.log
