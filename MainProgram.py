@@ -7,14 +7,13 @@ from Classes import ApartmentList
 from Classes import Apartment
 from PythonConfig import VPy
 import Applier
+import Logger
 
 def ScrapeAllAptQueriesAndUpdateDB():
     ## Loading SiteQueries from DB and passing as constructor argument, so that allAptQueries is initialized.
     allAptQueries = Persistence.AptQueriesLoadAll()
-
-    if VPy:
-        print("Loaded ApartmentQueries:")
-        allAptQueries.PrintApartmentQueries()
+    Logger.Info("Starting scrape for apartments:")
+    Logger.Info(allAptQueries.ListToString())
     
     ## Placeholder for identifiedApartments
     identifiedApartments = ApartmentList()
@@ -31,9 +30,14 @@ def ScrapeAllAptQueriesAndUpdateDB():
     
 
 def PerformApplication():
-    if VPy:
-        print("Applying for apartments")
     aptList = Persistence.ApartmentLoadAllAppliedFalse()
+    
+    if aptList.IsEmpty():
+        Logger.Info("No apartments to apply.")
+        return    
+
+    Logger.Info("Applying for apartments.")
+    Logger.Info(aptList.ListToString())
     for apartment in aptList.GetList():
         result = Applier.ApplyForFindBoligApartment(apartment)
         apartment.SetApplied(result)#See appliedStatusCode in Classes.py for description on meaning of return values.
@@ -44,10 +48,15 @@ def PerformApplication():
 #Works now and persists DB
 def PerformEmailActions():
     aptList = Persistence.ApartmentLoadAllEmailFalse()
-    findBoligEmailNotification = FindBoligNotification()
 
-    if VPy:
-        print("Apartments to be taken email actions for: '{0}'".format(aptList.GetNoApartmentsInList()))
+    if aptList.IsEmpty():
+        Logger.Info("No apartments to send e-mail on.")
+        return    
+
+    Logger.Info("Preparing e-mail for apartments:")
+    Logger.Info(aptList.ListToString())
+    
+    findBoligEmailNotification = FindBoligNotification()
 
     for apartment in aptList.GetList():
         findBoligEmailNotification.AppendApartmentToMessage(apartment)

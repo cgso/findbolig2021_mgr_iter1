@@ -7,6 +7,7 @@ from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy import and_
 from sqlalchemy import func
+import Logger
 
 #Declaring Base Class - assuming singleton behavior for each instantion of base from Base()
 Base = declarative_base()
@@ -39,14 +40,16 @@ class AptQuery (Base):
         baseRepr = '<AptQuery (title={title}, priceMax={priceMax}, address={address}, minSqm={minSqm})>'
         return baseRepr.format(title=self.title, priceMax=self.priceMax, address=self.address, minSqm = self.minSqm) 
         
+    def __str__(self):
+        baseRepr = '<AptQuery (title={title}, priceMax={priceMax}, address={address}, minSqm={minSqm})>'
+        return baseRepr.format(title=self.title, priceMax=self.priceMax, address=self.address, minSqm = self.minSqm) 
 
 class AptQueries:
     def __init__(self, apartmentQueryList = []):
         self.apartmentQueryList = apartmentQueryList
 
-    def PrintApartmentQueries(self):
-        for aptQuery in self.apartmentQueryList:
-            print(repr(aptQuery))
+    def ListToString(self):
+        return ''.join(str(aptQuery) for aptQuery in self.apartmentQueryList)
 
     def GetList(self):
         return self.apartmentQueryList
@@ -101,7 +104,10 @@ class Apartment (Base):
     def __repr__(self):
         return "<Apartment(streetAddress='%s',rent='%s', sqm='%s', availableFrom='%s', apartmentURL='%s', emailSentDateTime='%s', emailSent='%s')>" % (self.streetAddress, self.rent,self.sqm,self.availableFrom,self.apartmentURL,self.emailSentDateTime, self.emailSent)
 
-    #
+    def __str__(self):
+        return "<Apartment(streetAddress='%s',rent='%s', sqm='%s', availableFrom='%s', apartmentURL='%s', emailSentDateTime='%s', emailSent='%s')>" % (self.streetAddress, self.rent,self.sqm,self.availableFrom,self.apartmentURL,self.emailSentDateTime, self.emailSent)
+
+
     #Only meaningful when persisting, which requires that the object has been loaded from a session
     def SetEmailSentTimeStamp(self):
         self.emailSent = True
@@ -128,13 +134,13 @@ class ApartmentList:
                 return False
         self.apartmentList.append(newApartment)
         if VPy:
-            print("Appartment appended (Checked for Conflict): " + repr(newApartment))
+            Logger.Debug("Appartment appended (Checked for Conflict): " + repr(newApartment))
         return True
 
     #Appends an apartment without checking for conflcit.
     def AppendApartmentToList(self, newApartment):
         if VPy:
-            print("Appartment appended (No Check of Conflict): " + repr(newApartment))
+            Logger.Debug("Appartment appended (No Check of Conflict): " + repr(newApartment))
         self.apartmentList.append(newApartment)
     
     def IsEmpty(self):
@@ -170,3 +176,6 @@ class ApartmentList:
     def SetEmailSent(self):
         for apartment in self.apartmentList:
             apartment.SetEmailSentTimeStamp()
+
+    def ListToString(self):
+        return ''.join(str(apartment) for apartment in self.apartmentList)

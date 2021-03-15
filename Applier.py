@@ -21,6 +21,7 @@ def ApplyForFindBoligApartment(apartment):
     #Set Headless'ness equal to the Python running Configuration
     options = Options()
     options.headless=HeadlessBrowser
+    options.add_argument("window-size=1600,800")
     
     try:
         if LocalMachine:
@@ -46,7 +47,7 @@ def ApplyForFindBoligApartment(apartment):
 
         #2. Get apartment page
         browser.get(applyURL)
-
+       
         #First check if we have already applied by locating button
         try:
             applyButton = browser.find_element_by_id("ctl00_placeholdercontentright_1_but_Signup")
@@ -62,11 +63,12 @@ def ApplyForFindBoligApartment(apartment):
             return 6
         
         #Check if ButtonDisabled is one of the CSS classes of the signup button
+        #If it is disabled
         if 'ButtonDisabled' in applyButton.get_attribute('class').split():
             if VPy: 
                 print("Apartment is already applied")
             return 1
-        else:
+        else:#If it is not disabled, click it if WetRun
             if VPy:
                 print("Apartment being applied")
             if WetRun: #Check whether system is Wet Run
