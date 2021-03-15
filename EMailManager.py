@@ -13,18 +13,23 @@ class FindBoligNotification:
 
     def AppendApartmentToMessage(self, apartmentObj):
         self.apartmentsList.AppendApartmentToList(apartmentObj)
+        
 
     #Generate some HTML based on the apartments found in the List
     def ReturnApartmentsListToHtml(self):
-        html = "<table><tr><td>Address</td><td>Rent</td><td>SQM</td></tr>"
+        html = "<table><tr><td>Address</td><td>Rent</td><td>Sqm</td><td>Applied</td></tr>"
         for apartment in self.apartmentsList.GetList():
             ':type apartment: Apartment'
-            html += '<tr><td><a href="{url}">{address}</a></td><td>{price},0 kr.</td><td>{sqm}</td></tr>'. \
-            format(url=apartment.apartmentURL, address="{0} {1}".format(apartment.streetAddress, apartment.postalcode), price=apartment.rent, sqm=apartment.sqm)
+            appliedText = GetAppliedText(apartment)
+            html += '<tr><td><a href="{url}">{address}</a></td><td>{price},0 kr.</td><td>{sqm}</td><td>{appliedNote}</td></tr>'. \
+            format(url=apartment.apartmentURL, address="{0} {1}".format(apartment.streetAddress, apartment.postalcode), price=apartment.rent, sqm=apartment.sqm, appliedNote=appliedText)
         html += "</table>"
         return html
     
     def Send(self):
+        if self.apartmentsList.GetNoApartmentsInList() == 0:
+            return 0
+
         html = "<html>" + self.preBody + self.html + self.ReturnApartmentsListToHtml() + "</html>"
         subject = "{number} Apartments Found".format(number=self.apartmentsList.GetNoApartmentsInList())
         r = requests.post(
@@ -34,8 +39,25 @@ class FindBoligNotification:
 			"to": self.recipientsList,
 			"subject": subject,
 			"html": html})
-        #Tell the list that an e-mail has been sent and persist to DB
-        if r.status_code == 200:
-            self.apartmentsList.PersistEmailSent()
+
         return r.status_code
 
+def GetAppliedText(apartmentObj):
+        statusCode = apartmentObj.appliedStatusCode
+        appliedMessage = ""
+        if statusCode == 0:
+            appliedMessage = "Not applied"
+        elif statusCode == 1:
+            appliedMessage = "Already applied"
+        elif statusCode == 2:
+            appliedMessage = "Applied"
+        elif statusCode == 3:
+            appliedMessage = "Applied error"
+        elif statusCode == 4:
+            appliedMessage = "Wetrun Applied"
+        elif statusCode == 5:
+            appliedMessage = "Could not identify Ansoeg button. Not applied."
+        else:
+            appliedMessage = "Unknown error."
+        
+        return "{0} {1}".format(appliedMessage, apartmentObj.appliedDateTime)
